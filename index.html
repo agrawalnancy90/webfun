@@ -7,31 +7,29 @@
   <link rel="icon" type="image/ico" href="assets/images/61.ico">
   
   <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/tiles.css" />
-
- 
+  <link rel="stylesheet" href="css/tiles.css" /> 
 </head>
+
 <body>
 
-<div class="header">
-  <h2>Scroll Down</h2>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
-<div id="navbar">
-  <div class="align_center">
-    <a href="javascript:void(0)">Home</a>
-    <a href="javascript:void(0)">Portfolio</a>
-    <a href="javascript:void(0)">Projects</a>
-    <a href="javascript:void(0)">Research</a>
-    <a href="javascript:void(0)">Blogs</a>
-    <a href="javascript:void(0)">Testimonials</a>
-    <a href="javascript:void(0)">Contact</a>
+  <div class="header">
+    <h2>Scroll Down</h2>
+    <p>Scroll down to see the sticky effect.</p>
   </div>
-</div>
 
-        <!-- first page of tiles --> 
-    <!-- three rows in full page -->
+  <div id="navbar">
+    <div class="align_center">
+      <a href="javascript:void(0)">Home</a>
+      <a href="javascript:void(0)">Portfolio</a>
+      <a href="javascript:void(0)">Projects</a>
+      <a href="javascript:void(0)">Research</a>
+      <a href="javascript:void(0)">Blogs</a>
+      <a href="javascript:void(0)">Testimonials</a>
+      <a href="javascript:void(0)">Contact</a>
+    </div>
+  </div>
+
+<!-- three rows in full page -->
     <div class="three rows" id="first-page">
       <!-- three tiles per row -->
       <div class="three cols">
@@ -75,35 +73,31 @@
       </div>
     </div>
 
+  <div class="two rows" id="second-page">
+    <div class="three cols ">
+        <div class="schmancy tile  pic0">
+          <div class="content"> Fancy. </div>
+        </div>
+        <div class="schmancy tile  pic3">
+          <div class="content"> Stuff. </div>
+        </div>
+        <div class="schmancy tile  pic1">
+          <div class="content"> Fancy. </div>
+        </div>
+    </div>
+    <div class="three cols">
+        <div class="schmancy tile  pic0">
+          <div class="content"> Fancy. </div>
+        </div>
+        <div class="schmancy tile  pic3">
+          <div class="content"> Stuff. </div>
+        </div>
+        <div class="schmancy tile  pic1">
+          <div class="content"> Fancy. </div>
+        </div>
+    </div>
+  </div>
 
-
-
-<div class="content">
-  <h3>Sticky Navigation Example</h3>
-  <p>The navbar will stick to the top when you reach its scroll position.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 </body>
 </html>
