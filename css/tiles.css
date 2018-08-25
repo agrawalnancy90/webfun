@@ -89,19 +89,20 @@
 }
 
 .cols .tile.schmancy.pic0 {
-  background-image: url("http://pipsum.com/850x600.jpg");
+  background-image: url("../assets/images/appdev1.jpg");
+  /*background-color: yellow;*/
 }
 
 .cols .tile.schmancy.pic1 {
-  background-image: url("http://pipsum.com/800x600.jpg");
+  background-image: url("../assets/images/appdev2.jpg");
 }
 
 .cols .tile.schmancy.pic2 {
-  background-image: url("http://pipsum.com/800x650.jpg");
+  background-image: url("../assets/images/appdev3.jpg");
 }
 
 .cols .tile.schmancy.pic3 {
-  background-image: url("http://pipsum.com/800x550.jpg");
+  background-image: url("../assets/images/appdev4.jpg");
 }
 
 /************************************/
