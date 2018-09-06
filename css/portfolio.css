@@ -10,7 +10,7 @@
 /* Global styles 
 -------------------*/
 body {
-
+	margin: 0;
 }
 
 h1, h2 {
@@ -25,6 +25,7 @@ h1 {
 
 h2 {
 	font-size: 40px;
+	margin-top: 0;
 }
 
 a {
@@ -38,6 +39,7 @@ a:hover {
 .content-wrap {
 	max-width: 950px;
 	margin: 0 auto;
+	padding: 50px;
 }
 
 /* Header and Footer
@@ -47,8 +49,23 @@ header, footer {
 	color: #C0BCB5;
 }
 
+/* Header */
 header h1, header h2 {
 	color: #EEB868;
+}
+
+.profile-image {
+	width: 300px;
+	height: 300px;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+}
+
+.contact-info a {
+	margin: 18px;
 }
 
 /* Work experience
