@@ -35,6 +35,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
 /* Header and Footer
 ---------------------*/
 header, footer {
