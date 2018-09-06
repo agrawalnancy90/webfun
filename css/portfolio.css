@@ -1,0 +1,69 @@
+/* Color Palette
+#EF767A - reddish
+#456990 - bluish
+#49BEAA - dark greenish
+#49DCB1 - bright greenish
+#EEB868 - mustard yellow
+#C0BCB5 - light grey
+*/
+
+/* Global styles 
+-------------------*/
+body {
+
+}
+
+h1, h2 {
+	font-family: 'Satisfy', cursive;
+	line-height: 1;
+
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+a {
+	color: #49DCB1;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Header and Footer
+---------------------*/
+header, footer {
+	background: #456990;
+	color: #C0BCB5;
+}
+
+header h1, header h2 {
+	color: #EEB868;
+}
+
+/* Work experience
+--------------------*/
+.work-experience {
+	background: #EF767A;	
+}
+
+/* Education
+--------------------*/
+.education {
+	background: #49BEAA
+}
+
+.projects {
+	background: #49DCB1;
+}
+
+/* Skills
+---------------------*/
+.skills {
+	background: #EEB868;
+}
