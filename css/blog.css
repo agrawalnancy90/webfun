@@ -1,0 +1,44 @@
+body {
+	font-family: Apercu,sans-serif;
+	text-rendering: optimizeLegibility;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+	color: black;
+	padding-bottom: 3px;
+	text-decoration: none;
+	border-bottom: 2px #f8c803 solid;
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+.logo-center {
+	text-align: center;
+}
+
+.small-italics {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.center {
+	text-align: center;
+}

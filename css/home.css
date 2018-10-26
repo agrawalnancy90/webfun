@@ -1,0 +1,166 @@
+/* Color Palette
+#EF767A - reddish
+#456990 - bluish
+#49BEAA - dark greenish
+#49DCB1 - bright greenish
+#EEB868 - mustard yellow
+#C0BCB5 - light grey
+#E9967A - dark salmon
+
+*/
+
+/* Global styles 
+-------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+	margin: 0;
+  	font-size: 28px;
+  	height: 100%;
+
+}
+
+h1, h2 {
+	font-family: 'Satisfy', cursive;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+a {
+	color: #49DCB1;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+
+.col-narrow {
+	width: 30%;
+	float: left;
+}
+
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	min-height: 120px;
+}
+
+.col-fifty {
+	width: 50%;
+	float: left;
+}
+
+/* Nav bar
+---------------------*/
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-style: italic;
+  font-family: monospace;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Header and Footer
+---------------------*/
+header, footer {
+	background: #456990;
+	color: #C0BCB5;
+}
+
+header {
+	padding-top: 40px;
+}
+
+/* Header */
+header h1, header h2 {
+	color: #EEB868;
+	margin: 0;
+}
+
+.profile-image {
+	border-radius: 50%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* Footer */
+footer {
+	text-align: center;
+}
+
+.contact-info a {
+	margin: 18px;
+}
+
+/* Work experience
+--------------------*/
+.work-experience {
+	background: #E9967A;	
+}
+
+/* Education
+--------------------*/
+.education {
+	background: #49BEAA
+}
+
+.projects {
+	background: #49DCB1;
+}
+
+/* Skills
+---------------------*/
+.skills {
+	background: #EEB868;
+}
