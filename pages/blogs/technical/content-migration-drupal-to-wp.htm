@@ -24,7 +24,9 @@
 			<p> Moving information from one system to another can be an overwhelming process, especially when it has a lot of content. Besides, it involves several options and each of those choices comes with its own challenges.
 			</p>
 
-			<p> This blog intends to make one such use case easy for you: Move content from a Drupal 7 CMS to WordPress 4.9. <br>
+			<p> This blog intends to make one such use case easy for you: Move content from a Drupal 7 CMS to WordPress 4.9.
+			</p>
+			<p>
 			The content migration process involves three major steps:
 				<ul>
 					<li>Knowing what to migrate.</li>
@@ -37,35 +39,43 @@
 			<p>The first step in migrating your content is to decide what pages and related information you would want to move to your new system. This also involves understanding how content is organized in your current CMS and how it appears when moved to the new system. You would have to make several design decisions at this point. Let us follow this with an example: 
 			</p>
 
-			<p>Knowing my goal, I first explored how Drupal stores its content. I looked at both, the backend database, and the admin dashboard on my website. My Drupal database had more than 300 tables! Yours can vary depending on what modules are active on your Drupal CMS. But do not be overwhelmed by it. Most of these tables contain metadata on how your content is structured, access and revision history etc. , and not the actual content itself. Drupal stores its content as nodes. For categorizing content and its better management, the authors / editors / administrators may choose to organize their content into different types of node. This can be seen in the ‘Type’ field of drupal_node table. For a non-technical user, it can be seen on the dashboard too.
+			<p>Knowing my goal, I first explored how Drupal stores its content. I looked at both, the backend database, and the admin dashboard on my website. My Drupal database had more than 300 tables! Yours can vary depending on what modules are active on your Drupal CMS. But do not be overwhelmed by it. Most of these tables contain metadata on how your content is structured, access and revision history etc., and not the actual content itself. Drupal stores its content as nodes. For categorizing content and its better management, the authors / editors / administrators may choose to organize their content into different types of nodes. This can be seen in the ‘Type’ field of drupal_node table. For a non-technical user, it can be seen on the dashboard too.
 			</p>
 
 			<p>On the Drupal dashboard, go to Content → Add Content.
+				<figure><img src="../../../assets/images/content_types.png"><br>
+				<span class="small-italics">Figure 1: Different content types in Drupal CMS</span>
+				</figure>
+				Here you can see all the different types of nodes that your CMS uses to store the content. Figure 1 shows a custom content type - ‘Answer’ that is specific to my website. You can have several others on yours. You might want to list all the content types available on your Drupal instance to plan which type goes where in your new system.
 			</p>
-			
 
+			<p>
+				Click on any one of those types. You can now see the different fields that go in the selected content type. Figure 2 shows some of the fields for content type ‘Answer’. 
+				<figure><img src="../../../assets/images/create_answer.png"><br>
+				<span class="small-italics">Figure 2: Create content of a particular type.</span>
+				</figure>
+			</p>
 
-				<h3>Content Migration from Drupal to WordPress</h3>
-					<figure><img src="../assets/images/cat1.jpg"></figure>
-					<blockquote> 
-						<q>A cat has nine lives. For three he plays, for three he strays, and for the last three he stays.</q>
-						<footer><cite>- An ancient proverb </cite> </footer>
-					</blockquote>
-				<h3>Jack of all trades, master of some</h3>
-					<p>In 
-				<h3>A candle loses nothing in lighting another candle</h3>
-				<h3>It's only words</h3>
-				<section>
-					<header>
-					<h2> Comments </h2>
-						<p>To leave a comment you must <a href="join.htm" title="Grow with me">register</a> or <a href="login.htm">sign in</a>.
-						</p>
-					</header>
-						<article>
-							<h3>Abc wrote this on Sept xth, 2018 at 12:45</h3>
-							<p>Keep up the good work!</p>
-						</article>
-				</section>
+			<p>This step is useful to list down all the fields that you might want to export for a node type. An alternative approach is to go to dashboard, click on content, select the node type and click apply. This lists some of the existing content of the selected type.
+			<figure><img src="../../../assets/images/view_type.png"><br>
+			<span class="small-italics">Figure 3: Select a particular content type.</span>
+			</figure>
+			You can now select edit (from operations column as shown in figure 4). This gives a better idea of what goes in each field of the content type.
+			<figure><img src="../../../assets/images/some_answers.png"><br>
+			<span class="small-italics">Figure 4: List of some existing content of selected type.</span>
+			</figure>
+			You can also select one of the content items from the list as shown in Figure 4 to see how this content appears on your current site (Figure 5).
+			<figure><img src="../../../assets/images/content_on_site.png"><br>
+			<span class="small-italics">Figure 5: Sample of how the content type appears on the site.
+</span>
+			</figure>
+			</p>
+
+			<p>
+				Before proceeding with the next step, it might be useful to note down all the fields related to each content type that you wish to migrate.
+			</p>
+
+				
 			</article>
 		</main>
 
