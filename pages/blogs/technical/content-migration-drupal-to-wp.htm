@@ -20,8 +20,31 @@
 
 		<main role="main">
 			<h2>Content Migration from Drupal to WordPress</h2>
-			<p class="small-italics center">Posted on <time datetime="2018-09-03">October 25th, 2018</time></p>
-			<article role="article">
+			<p class="small-italics center">Posted on <time datetime="2018-09-03">October 25th, 2018</time> by Nancy Agrawal</p>
+			<p> Moving information from one system to another can be an overwhelming process, especially when it has a lot of content. Besides, it involves several options and each of those choices comes with its own challenges.
+			</p>
+
+			<p> This blog intends to make one such use case easy for you: Move content from a Drupal 7 CMS to WordPress 4.9. <br>
+			The content migration process involves three major steps:
+				<ul>
+					<li>Knowing what to migrate.</li>
+					<li>Exporting it from the current system.</li>
+					<li>Importing it into the new system.</li>
+				</ul>
+			</p>
+
+			<h3>Knowing What You Want to Move</h3>
+			<p>The first step in migrating your content is to decide what pages and related information you would want to move to your new system. This also involves understanding how content is organized in your current CMS and how it appears when moved to the new system. You would have to make several design decisions at this point. Let us follow this with an example: 
+			</p>
+
+			<p>Knowing my goal, I first explored how Drupal stores its content. I looked at both, the backend database, and the admin dashboard on my website. My Drupal database had more than 300 tables! Yours can vary depending on what modules are active on your Drupal CMS. But do not be overwhelmed by it. Most of these tables contain metadata on how your content is structured, access and revision history etc. , and not the actual content itself. Drupal stores its content as nodes. For categorizing content and its better management, the authors / editors / administrators may choose to organize their content into different types of node. This can be seen in the ‘Type’ field of drupal_node table. For a non-technical user, it can be seen on the dashboard too.
+			</p>
+
+			<p>On the Drupal dashboard, go to Content → Add Content.
+			</p>
+			
+
+
 				<h3>Content Migration from Drupal to WordPress</h3>
 					<figure><img src="../assets/images/cat1.jpg"></figure>
 					<blockquote> 

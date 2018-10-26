@@ -5,6 +5,8 @@
 #49DCB1 - bright greenish
 #EEB868 - mustard yellow
 #C0BCB5 - light grey
+#E9967A - dark salmon
+
 */
 
 /* Global styles 
@@ -101,7 +103,7 @@ footer {
 /* Work experience
 --------------------*/
 .work-experience {
-	background: #EF767A;	
+	background: #E9967A;	
 }
 
 /* Education
