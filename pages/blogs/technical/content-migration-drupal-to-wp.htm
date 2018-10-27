@@ -180,13 +180,52 @@
 				<span class="small-italics">Figure 23: Option to upload XML or CSV file.</span>
 			</figure>				
 			</p>
-			<p>After uploading the file, you need to select how you want your content to be rendered on your WordPress theme. For example, my theme does not support generalized posts to be displayed in any component. Therefore, I select a particular type (say News) of posts. You can select whichever look and feel suits your content and is supported by your theme.
+			<p>After uploading the file, you need to select how you want your content to be rendered on your WordPress theme. For example, my theme does not support generalized posts to be displayed in any component. Therefore, I select a particular type (say News) of posts. You can select whichever look and feel suits your content and is supported by your theme.Then select ‘Continue to Step 2’.
 			<figure><img class="center-image" src="../../../assets/images/import3.png" width="80%"><br>
 				<span class="small-italics">Figure 24: Different types of content on the WordPress theme.</span>
 			</figure>
+			<figure><img class="center-image" src="../../../assets/images/import5.png" width="80%"><br>
+				<span class="small-italics">Figure 25: Continue to Step 2 after selecting your content type.</span>
+			</figure>
+			</p>
+			<p>The next field displays the number of elements that will be imported. You can even select a particular element from the left column with the heading ‘What element are you looking for?’ This is useful for importing elements from your xml selectively.
+			<figure><img class="center-image" src="../../../assets/images/import6.png" width="80%"><br>
+				<span class="small-italics">Figure 26: Step 2 displaying the elements to be imported.</span>
+			</figure>
+			</p>
+			<p>The window at the bottom of this step lets you add rules to filter what to import. For example, I have an element called ‘isPublished’ in my xml and I want to import only those nodes for which isPublished has a value ‘Yes’.  From the ‘Select Element’ dropdown, I select the element isPublished, select rule ‘equals’ and add the value ‘Yes’ to the Value field and click ‘Add Rule’.
+			<figure><img class="center-image" src="../../../assets/images/import8.png" width="80%"><br>
+				<span class="small-italics">Figure 27: Selecting the element to apply filter on.</span>
+			</figure>
+			<figure><img class="center-image" src="../../../assets/images/import9.png" width="80%"><br>
+				<span class="small-italics">Figure 28: Adding rule to the element isPublished.</span>
+			</figure>
+			<figure><img class="center-image" src="../../../assets/images/import10.png" width="80%"><br>
+				<span class="small-italics">Figure 29: Adding the rule with the value ‘Yes’.</span>
+			</figure>
 			</p>
 
+			<p>The rule shows up at the bottom. Click ‘Apply Filters to XPath’. This will reflect how many nodes fulfil this filter criterion at the top and will only import those nodes. Figure 26 shows 1024 nodes, whereas after applying this filter, I now have 473 nodes that I want to import. Click ‘Continue to Step 3’. 
+			<figure><img class="center-image" src="../../../assets/images/import11.png" width="80%"><br>
+				<span class="small-italics">Figure 30: Number of nodes that fulfil the filter criterion.</span>
+			</figure>
+			</p>
 
+			<p>In this step we drag and drop elements from the right column, to the appropriate fields. For example, on expanding Title & Content (by clicking on the dropdown arrow on its right), I see a field to drag and drop some element from the xml into this field. In my example, &lt;Title&gt; is an appropriate element for this field, so I click on &lt;Title&gt; in the xml from the right column and drag-drop it in the Title field.
+			<figure><img class="center-image" src="../../../assets/images/import12.png" width="80%"><br>
+				<span class="small-italics">Figure 31: Fields for mapping xml elements.</span>
+			</figure>
+			<figure><img class="center-image" src="../../../assets/images/import13.png" width="80%"><br>
+				<span class="small-italics">Figure 32: Drag and Drop &lt;Title&gt; element into Title &amp; Content Field.</span>
+			</figure>
+			</p>
+			<p>To decide what goes where, you might want to take a look at a sample of that content type in WordPress. If none exists, you would need to create a dummy post of that type. Since I am importing into News posts, this is how my dummy News post looks on my theme:
+			<figure><img class="center-image" src="../../../assets/images/news.png" width="60%"><br>
+				<span class="small-italics">Figure 33: A Dummy News Post on my WordPress theme.</span>
+			</figure>
+			</p>
+			<p>This dummy news post helps me decide where I would want to place what part of my exported content. This also helps in auto detection of custom fields.
+			</p>
 			
 
 										
