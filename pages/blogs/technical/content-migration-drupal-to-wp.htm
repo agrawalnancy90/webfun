@@ -44,7 +44,7 @@
 
 			<p>On the Drupal dashboard, go to Content → Add Content.
 				<figure><img class="center-image" src="../../../assets/images/content_types.png" width="80%"><br>
-				<span class="small-italics">Figure 1: Different content types in Drupal CMS</span>
+				<p class="small-italics center">Figure 1: Different content types in Drupal CMS</p>
 				</figure>
 				Here you can see all the different types of nodes that your CMS uses to store the content. Figure 1 shows a custom content type - ‘Answer’ that is specific to my website. You can have several others on yours. You might want to list all the content types available on your Drupal instance to plan which type goes where in your new system.
 			</p>
@@ -52,21 +52,21 @@
 			<p>
 				Click on any one of those types. You can now see the different fields that go in the selected content type. Figure 2 shows some of the fields for content type ‘Answer’. 
 				<figure><img class="center-image" src="../../../assets/images/create_answer.png" width="80%"><br>
-				<span class="small-italics">Figure 2: Create content of a particular type.</span>
+				<p class="small-italics center">Figure 2: Create content of a particular type.</p>
 				</figure>
 			</p>
 
 			<p>This step is useful to list down all the fields that you might want to export for a node type. An alternative approach is to go to dashboard, click on content, select the node type and click apply. This lists some of the existing content of the selected type.
 			<figure><img class="center-image" src="../../../assets/images/view_type.png" width="90%"><br>
-			<span class="small-italics">Figure 3: Select a particular content type.</span>
+			<p class="small-italics center">Figure 3: Select a particular content type.</p>
 			</figure>
 			You can now select edit (from operations column as shown in figure 4). This gives a better idea of what goes in each field of the content type.
 			<figure><img class="center-image" src="../../../assets/images/some_answers.png" width="90%"><br>
-			<span class="small-italics">Figure 4: List of some existing content of selected type.</span>
+			<p class="small-italics center">Figure 4: List of some existing content of selected type.</p>
 			</figure>
 			You can also select one of the content items from the list as shown in Figure 4 to see how this content appears on your current site (Figure 5).
 			<figure><img class="center-image" src="../../../assets/images/content_on_site.png"><br>
-			<span class="small-italics">Figure 5: Sample of how the content type appears on the site.</span>
+			<p class="small-italics center">Figure 5: Sample of how the content type appears on the site.</p>
 			</figure>
 			</p>
 
@@ -83,69 +83,69 @@
 
 			<p>Check in your modules that Views Data Export is active. If not, mark the check box next to it and click ‘Save Configuration’.
 			<figure><img class="center-image" src="../../../assets/images/modules.png"><br>
-				<span class="small-italics">Figure 6: Active Views Modules</span>
+			<p class="small-italics center">Figure 6: Active Views Modules</p>
 			</figure>
 			</p>
 
 			<p>Now go to dashboard → Structure → Views → Add New View.
 			<figure><img class="center-image" src="../../../assets/images/views.png"><br>
-				<span class="small-italics">Figure 7: Add new view</span>
+				<p class="small-italics center">Figure 7: Add new view</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/add_view1.png" width="80%"><br>
-				<span class="small-italics">Figure 8: Add new view fields.</span>
+				<p class="small-italics center">Figure 8: Add new view fields.</p>
 			</figure>
 			</p>
 
 			<p>Enter view name: Export Demo. Select Description and add description if you like. Unselect the checkbox next to Create a page. This shrinks the options and leaves us with only what we need.
 			<figure><img class="center-image" src="../../../assets/images/add_view2.png" width="80%"><br>
-				<span class="small-italics">Figure 9: Only relevant options.</span>
+				<p class="small-italics center">Figure 9: Only relevant options.</p>
 			</figure>
 			</p>
 
 			<p>The drop-down of ‘Show’ contains several options. In this blog, we will only explore Content. Other options can be selected and worked upon in the same way. Select ‘of type’ from the drop-down. I am exporting the content type ‘Answers’ for this demo. You can even select a particular tag. For example, if you have some pages which are tagged with the term ‘service’ and you are interested in exporting only those pages, then you enter ‘service’ in the ‘tagged-with’ field. Now select ‘Continue &amp; edit’. 
 			<figure><img class="center-image" src="../../../assets/images/add_view3.png" width="80%"><br>
-				<span class="small-italics">Figure 10: Select content type and Continue &amp; edit.</span>
+				<p class="small-italics center">Figure 10: Select content type and Continue &amp; edit.</p>
 			</figure>
 
 			<figure><img class="center-image" src="../../../assets/images/add_view4.png" width="80%"><br>
-				<span class="small-italics">Figure 11: Export Demo screen with changes not saved yet.</span>
+				<p class="small-italics center">Figure 11: Export Demo screen with changes not saved yet.</p>
 			</figure>	
 			</p>
 
 			<p>You will see a warning at the top of this screen saying “All changes are saved temporarily”. Whenever you make any changes, you should click on ‘Save’ on the top right corner of this screen, otherwise the changes are lost when you refresh the page. At the bottom of this screen, you will see an option with Auto-preview checked. Uncheck it for faster processing. Whenever you want a preview, you can click on Update preview.
 			<figure><img class="center-image" src="../../../assets/images/add_view5.png" width="80%"><br>
-				<span class="small-italics">Figure 12: Uncheck Auto preview for faster processing.</span>
+				<p class="small-italics center">Figure 12: Uncheck Auto preview for faster processing.</p>
 			</figure>
 			</p>
 
 			<p>Now click on Add and select Data export from the drop-down.
 			<figure><img class="center-image" src="../../../assets/images/add_view6.png" width="80%"><br>
-				<span class="small-italics">Figure 13: Add Data export view.</span>
+				<p class="small-italics center">Figure 13: Add Data export view.</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/add_view7.png" width="80%"><br>
-				<span class="small-italics">Figure 14: Added Data export view.</span>
+				<p class="small-italics center">Figure 14: Added Data export view.</p>
 			</figure>
 			</p>
 
 			<p>We are now ready to set the required export configuration. First, we select XML format by clicking on CSV file and selecting XML from the options. Check the box ‘Provide as file’ and give a filename. Click Apply.
 			<figure><img class="center-image" src="../../../assets/images/add_view8.png" width="80%"><br>
-				<span class="small-italics">Figure 15: Selecting file format as XML.</span>
+				<p class="small-italics center">Figure 15: Selecting file format as XML.</p>
 			</figure>
 			</p>
 
 			<p>In the Fields section, click on Add, search for the fields related to your content type and add them by clicking on ‘Apply (all displays)’.
 			<figure><img class="center-image" src="../../../assets/images/add_view9.png" width="80%"><br>
-				<span class="small-italics">Figure 16: Adding fields to view.</span>
+				<p class="small-italics center">Figure 16: Adding fields to view.</p>
 			</figure>
 			</p>
 			<p>It then takes you to Configure Field window for each field that you selected. Enter a label that you would want as your XML tag for that field and select Apply (all displays). You can add/delete fields later on as well.
 			<figure><img class="center-image" src="../../../assets/images/add_view10.png" width="80%"><br>
-				<span class="small-italics">Figure 17: Configuring field label.</span>
+				<p class="small-italics center">Figure 17: Configuring field label.</p>
 			</figure>
 			</p>
 			<p>Once you have selected all the required fields, they show up in the Fields section as shown in Figure 18.
 			<figure><img class="center-image" src="../../../assets/images/add_view11.png" width="80%"><br>
-				<span class="small-italics">Figure 18: Displaying selected fields.</span>
+				<p class="small-italics center">Figure 18: Displaying selected fields.</p>
 			</figure>
 			</p>
 			<p>You can add or remove any field to the Filter Criteria and only the filtered content will be exported. For example, Figure 18 shows that only published content will be exported. You can remove this filter by clicking on the drop-down next to Add button. This will export unpublished content as well.
@@ -153,15 +153,15 @@
 
 			<p>Next we configure Data Export Settings. Click on ‘No path is set’ and add a unique path. Eg. export-demo. On ‘Batched export’, click on No and make changes as shown in Figure 19.
 			<figure><img class="center-image" src="../../../assets/images/add_view12.png" width="80%"><br>
-				<span class="small-italics">Figure 19: Batched export settings.</span>
+				<p class="small-italics center">Figure 19: Batched export settings.</p>
 			</figure>	
 			</p>
 			<p>Select Permissions to None. For ‘Items to display’, select Display all items and Apply. Leave the pager options unaltered and Apply (all displays).
 			<figure><img class="center-image" src="../../../assets/images/add_view13.png" width="80%"><br>
-				<span class="small-italics">Figure 20: Select display all items.</span>
+				<p class="small-italics center">Figure 20: Select display all items.</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/add_view14.png" width="80%"><br>
-				<span class="small-italics">Figure 21: Leave pager options to default and select Apply (all displays).</span>
+				<p class="small-italics center">Figure 21: Leave pager options to default and select Apply (all displays).</p>
 			</figure>				
 			</p>
 			<p>Now click on Save at the top right corner of the window. Click Update Preview and you can see the expected output of the xml file. Make changes in the fields according to your needs. Remember to Save after making the changes. Now go to your drupal site and enter the export path after your main site path in the URL. Eg. http://localhost:8888/my-website.com/export-demo  and load the page. Your xml file with exported content is ready for download.
@@ -172,61 +172,228 @@
 
 			<p>On your WordPress dashboard, go to All Import → New Import.
 			<figure><img class="center-image" src="../../../assets/images/import1.png" width="40%"><br>
-				<span class="small-italics">Figure 22: New import option of WP All Import.</span>
+				<p class="small-italics center">Figure 22: New import option of WP All Import.</p>
 			</figure>				
 			</p>
 			<p>Select ‘Upload a file’ and upload the xml file generated from Views Data Export. 
 			<figure><img class="center-image" src="../../../assets/images/import2.png" width="80%"><br>
-				<span class="small-italics">Figure 23: Option to upload XML or CSV file.</span>
+				<p class="small-italics center">Figure 23: Option to upload XML or CSV file.</p>
 			</figure>				
 			</p>
 			<p>After uploading the file, you need to select how you want your content to be rendered on your WordPress theme. For example, my theme does not support generalized posts to be displayed in any component. Therefore, I select a particular type (say News) of posts. You can select whichever look and feel suits your content and is supported by your theme.Then select ‘Continue to Step 2’.
 			<figure><img class="center-image" src="../../../assets/images/import3.png" width="80%"><br>
-				<span class="small-italics">Figure 24: Different types of content on the WordPress theme.</span>
+				<p class="small-italics center">Figure 24: Different types of content on the WordPress theme.</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/import5.png" width="80%"><br>
-				<span class="small-italics">Figure 25: Continue to Step 2 after selecting your content type.</span>
+				<p class="small-italics center">Figure 25: Continue to Step 2 after selecting your content type.</p>
 			</figure>
 			</p>
 			<p>The next field displays the number of elements that will be imported. You can even select a particular element from the left column with the heading ‘What element are you looking for?’ This is useful for importing elements from your xml selectively.
 			<figure><img class="center-image" src="../../../assets/images/import6.png" width="80%"><br>
-				<span class="small-italics">Figure 26: Step 2 displaying the elements to be imported.</span>
+				<p class="small-italics center">Figure 26: Step 2 displaying the elements to be imported.</p>
 			</figure>
 			</p>
 			<p>The window at the bottom of this step lets you add rules to filter what to import. For example, I have an element called ‘isPublished’ in my xml and I want to import only those nodes for which isPublished has a value ‘Yes’.  From the ‘Select Element’ dropdown, I select the element isPublished, select rule ‘equals’ and add the value ‘Yes’ to the Value field and click ‘Add Rule’.
 			<figure><img class="center-image" src="../../../assets/images/import8.png" width="80%"><br>
-				<span class="small-italics">Figure 27: Selecting the element to apply filter on.</span>
+				<p class="small-italics center">Figure 27: Selecting the element to apply filter on.</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/import9.png" width="80%"><br>
-				<span class="small-italics">Figure 28: Adding rule to the element isPublished.</span>
+				<p class="small-italics center">Figure 28: Adding rule to the element isPublished.</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/import10.png" width="80%"><br>
-				<span class="small-italics">Figure 29: Adding the rule with the value ‘Yes’.</span>
+				<p class="small-italics center">Figure 29: Adding the rule with the value ‘Yes’.</p>
 			</figure>
 			</p>
 
 			<p>The rule shows up at the bottom. Click ‘Apply Filters to XPath’. This will reflect how many nodes fulfil this filter criterion at the top and will only import those nodes. Figure 26 shows 1024 nodes, whereas after applying this filter, I now have 473 nodes that I want to import. Click ‘Continue to Step 3’. 
 			<figure><img class="center-image" src="../../../assets/images/import11.png" width="80%"><br>
-				<span class="small-italics">Figure 30: Number of nodes that fulfil the filter criterion.</span>
+				<p class="small-italics center">Figure 30: Number of nodes that fulfil the filter criterion.</p>
 			</figure>
 			</p>
 
-			<p>In this step we drag and drop elements from the right column, to the appropriate fields. For example, on expanding Title & Content (by clicking on the dropdown arrow on its right), I see a field to drag and drop some element from the xml into this field. In my example, &lt;Title&gt; is an appropriate element for this field, so I click on &lt;Title&gt; in the xml from the right column and drag-drop it in the Title field.
+			<p>In this step we drag and drop elements from the right column, to the appropriate fields. For example, on expanding Title &amp; Content (by clicking on the dropdown arrow on its right), I see a field to drag and drop some element from the xml into this field. In my example, &lt;Title&gt; is an appropriate element for this field, so I click on &lt;Title&gt; in the xml from the right column and drag-drop it in the Title field.
 			<figure><img class="center-image" src="../../../assets/images/import12.png" width="80%"><br>
-				<span class="small-italics">Figure 31: Fields for mapping xml elements.</span>
+				<p class="small-italics center">Figure 31: Fields for mapping xml elements.</p>
 			</figure>
 			<figure><img class="center-image" src="../../../assets/images/import13.png" width="80%"><br>
-				<span class="small-italics">Figure 32: Drag and Drop &lt;Title&gt; element into Title &amp; Content Field.</span>
+				<p class="small-italics center">Figure 32: Drag and Drop &lt;Title&gt; element into Title &amp; Content Field.</p>
 			</figure>
 			</p>
 			<p>To decide what goes where, you might want to take a look at a sample of that content type in WordPress. If none exists, you would need to create a dummy post of that type. Since I am importing into News posts, this is how my dummy News post looks on my theme:
 			<figure><img class="center-image" src="../../../assets/images/news.png" width="60%"><br>
-				<span class="small-italics">Figure 33: A Dummy News Post on my WordPress theme.</span>
+				<p class="small-italics center">Figure 33: A Dummy News Post on my WordPress theme.</p>
 			</figure>
 			</p>
-			<p>This dummy news post helps me decide where I would want to place what part of my exported content. This also helps in auto detection of custom fields.
+			<p>This dummy news post helps me decide where I would want to place what part of my exported content. This also helps in auto detection of custom fields. Moving on to images, this is a slightly tricky part. 
+			<figure><img class="center-image" src="../../../assets/images/import20.png" width="60%"><br>
+				<p class="small-italics center">Figure 34: Importing images.</p>
+			</figure>
 			</p>
 			
+			<p>Please take a look at <a href="http://www.wpallimport.com/documentation/" target="_blank">WP All Import Documentation</a> for various ways of importing images. I used foreach loops and imported images from URLs. For this, I also had to overwrite my XML file using a simple Java code.
+			</p>
+			<p>After the export, my images had URLs in the following format :
+			</p>
+			<p>&lt;Content:Image&gt;<br>&nbsp; &nbsp; &nbsp; &lt;img typeof="foaf:Image" src="http://localhost:8888/my-website/&lt;path-to-image&rt;/capture.jpg" width="416" height="221" alt="" /&gt;<br>
+			&lt;Content:Image&gt;</p>
+			<p> But this format cannot be used by FOREACH loop while importing as it is. So I wrote the following JAVA code to overwrite the image part in the xml. This also overwrites the URLs from localhost to the live site.
+			</p>
+			<pre>
+				<code>
+	import java.io.File;
+	import java.io.FileNotFoundException;
+	import java.io.FileReader;
+	import java.io.FileWriter;
+	import java.io.IOException;
+
+	import javax.xml.parsers.DocumentBuilder;
+	import javax.xml.parsers.DocumentBuilderFactory;
+	import javax.xml.parsers.ParserConfigurationException;
+	import javax.xml.transform.Transformer;
+	import javax.xml.transform.TransformerConfigurationException;
+	import javax.xml.transform.TransformerException;
+	import javax.xml.transform.TransformerFactory;
+	import javax.xml.transform.dom.DOMSource;
+	import javax.xml.transform.stream.StreamResult;
+
+	import org.w3c.dom.Document;
+	import org.w3c.dom.Element;
+	import org.w3c.dom.Node;
+	import org.w3c.dom.NodeList;
+	import org.xml.sax.SAXException;
+
+	public class XMLFixImageElements {
+		
+		private static final String filename = "demo";
+		private static final String rawFileName = "/Downloads/" + filename + ".xml";
+		private static final String tempFileName = "/migration/" + filename + ".xml";
+		private static final String newFileName = "/migration/" + filename + "_all.xml";
+		private static final String imageParentTagName = "Content:Image";
+
+		public static void main(String[] args) {
+			rewriteImageNodesAsSrc();
+			convertURLsToGlobal();
+		}
+			
+		public static void rewriteImageNodesAsSrc() {
+			File inputFile = new File(rawFileName);
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			try {
+				DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+				Document doc = dBuilder.parse(inputFile);
+				doc.getDocumentElement().normalize();
+				NodeList nList = doc.getElementsByTagName(imageParentTagName);
+				
+				for(int temp = 0; temp < nList.getLength(); temp++) {
+					Node nNode = nList.item(temp);
+					if(nNode.getNodeType() == Node.ELEMENT_NODE) {
+						String content = nNode.getTextContent();
+						String[] images = content.split(",");
+						for(String s: images) {
+							String[] med1 = s.split(" ");
+							for(String subs: med1) {
+								if(subs.startsWith("src")) {
+									String[] resulting = subs.split("\"");
+									if(resulting.length > 1) {
+										Element image = doc.createElement("image");
+										nNode.appendChild(image);
+										Element url = doc.createElement("url");
+										url.appendChild(doc.createTextNode(resulting[1]));
+										image.appendChild(url);
+									}
+								}
+							}
+						}
+						
+					}
+					
+				}
+				TransformerFactory tf = TransformerFactory.newInstance();
+				Transformer tf1 = tf.newTransformer();
+				DOMSource source = new DOMSource(doc);
+				StreamResult res = new StreamResult(new File(tempFileName));
+				tf1.transform(source, res);	
+				
+			} catch (ParserConfigurationException e1) {
+				e1.printStackTrace();
+			} catch (SAXException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (TransformerConfigurationException e) {
+				e.printStackTrace();
+			} catch (TransformerException e) {
+				e.printStackTrace();
+			}
+
+		}
+		
+		public static void convertURLsToGlobal() {
+			StringBuilder data = new StringBuilder();
+			StringBuilder data1 = new StringBuilder();
+			
+			try {
+				FileReader reader = new FileReader(tempFileName);
+				int i;
+				while ((i=reader.read()) != -1) {
+					data.append((char) i);
+				}
+				data1.append(data.toString().replaceAll("http://localhost:8888/", "https://"));
+				
+				File file = new File(newFileName);
+				FileWriter writer = new FileWriter(file);
+				writer.write(data1.toString());
+				writer.close();
+				reader.close();			
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+	}
+</code>
+</pre>
+	<p>The resulting image element looks as shown below and can easily be imported using WP All Import as it is now wrapped inside a separate &lt;url&gt; element.</p>
+	<p>&lt;Content:Image&gt;<br>&nbsp; &nbsp; &nbsp;
+		&lt;img typeof="foaf:Image" src="http://localhost:8888/my-website/&lt;path-to-image&gt;/capture.jpg" width="416" height="221" alt="" /&gt;<br>&nbsp; &nbsp; &nbsp;
+		&lt;image&gt; <br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+			&lt;url>https://my-website/&lt;path-to-image&gt;/capture.jpg&lt;/url&gt;<br>&nbsp; &nbsp; &nbsp;
+		&lt;/image&gt;<br>
+	&lt;Content:Image&gt;</p>
+
+	<p>Next we have Custom Fields. If you have at least one post of the required type like our dummy news post for News post type, you will get the option to auto detect custom fields.
+	<figure><img class="center-image" src="../../../assets/images/import21.png" width="60%"><br>
+		<p class="small-italics center">Figure 35: Custom Fields.</p>
+	</figure>
+	</p>
+
+	<p>Click on ‘See Detected Fields’ and this will list all the fields in your post. You can then drag and drop elements from your XML to these custom fields. This is where the dummy post preview shown in Figure 33 comes in handy.
+	<figure><img class="center-image" src="../../../assets/images/import22.png" width="60%"><br>
+		<p class="small-italics center">Figure 36: Automatically detected custom fields.</p>
+	</figure>
+	</p>
+
+	<p>For my example, I drag-drop ‘Answer-Body’ element into the value against intro_text_body, ‘Sticky’ element into ‘content_sticky’ and so on. It really depends on your exported and imported content types. The WP All Import documentation explains some advanced options as well that can be useful depending on your requirements. Once you are done with these settings, continue to step 4. Here you can auto-detect a unique identifier for each post.
+	<figure><img class="center-image" src="../../../assets/images/import23.png" width="60%"><br>
+		<p class="small-italics center">Figure 37: Auto - detect unique identifier.</p>
+	</figure>
+	</p>
+
+	<p>In the Advanced options, it is a good idea to select iterative piece by piece processing and set it to 5 records. In case your import has several images, trying to import everything at once might lead to server timeouts and fail your imports. Thus this setting is useful. You can then Confirm and Run Import.
+	<figure><img class="center-image" src="../../../assets/images/import24.png" width="60%"><br>
+		<p class="small-italics center">Figure 38: Advanced Settings</p>
+	</figure>
+	<figure><img class="center-image" src="../../../assets/images/import25.png" width="60%"><br>
+		<p class="small-italics center">Figure 39: Confirm and Run Import.</p>
+	</figure>
+	</p>
+
+	<p>This is it. You now have your content on WordPress. In case you run into any issues, see <a href="http://www.wpallimport.com/documentation/troubleshooting/common-issues/" target="_blank">WP All Import Troubleshooting Guide</a>
+	</p>
+
 
 										
 			</article>
