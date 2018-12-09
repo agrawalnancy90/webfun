@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<meta charset="utf-8">
 	<title>Nancy Agrawal | Projects</title>
 	<!-- [if lt IE 9]>
@@ -51,9 +53,17 @@
 				<div class="content-wrap">
 					<!-- SmallTalk Projects -->
 					<div class="col-narrow">
-						<img class="project-image-large" src="../assets/images/Set_Calculator.png">
+						<img id="img1" class="project-image-large local-img" src="../assets/images/Set_Calculator.png" alt="Set Calculator">
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>
+
 						<h4>Set Calculator</h4>
-						<img class="project-image-large" src="../assets/images/pc.png">
+						<img id="img2" class="project-image-large local-img" src="../assets/images/pc.png" alt="Program Calculator">
 						<h4>Program Calculator</h4>
 					</div>
 
@@ -170,7 +180,8 @@
 				</div>
 			</section>
 		</main>
-
+	
+	<script src="../js/modal.js"></script>
 
 	<footer>
 	</footer>
