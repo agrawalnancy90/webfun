@@ -7,21 +7,21 @@ html {
 }
 
 .content-wrap {
-  max-width: 950px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 30px;
   overflow: auto;
 }
 
 .col-narrow {
-  width: 30%;
+  width: 35%;
   float: left;
 }
 
 .col-wide {
-  width: 70%;
+  width: 65%;
   float: left;
-  padding-left: 20px;
+  padding-left: 30px;
   min-height: 120px;
 }
 
