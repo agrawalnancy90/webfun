@@ -1,0 +1,103 @@
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  width: 40%;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  width: 60%;
+  background-color: #808080;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #EEB868;
+}
+
+.centered img {
+  width: 210px;
+  border-radius: 50%;
+}
+
+.quote {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  font-size: 48px;
+}
+
+.credentials {
+  padding-left: 180px;
+  font-size: 25px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3B3355;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.second {
+  background-color: #E34A6F;
+}
+
+.third {
+  background-color: #B8860B;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.container {
+  padding-top: 50px;
+  padding-left: 80px;
+}
