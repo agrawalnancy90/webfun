@@ -51,15 +51,8 @@
 					<!-- SmallTalk Projects -->
 					<div class="col-narrow">
 						<img id="img1" class="project-image-large local-img" src="../assets/images/Set_Calculator.png" alt="Set Calculator">
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						  <span class="close">&times;</span>
-						  <img class="modal-content" id="img01">
-						  <div id="caption"></div>
-						</div>
-
 						<h4>Set Calculator</h4>
+						
 						<img id="img2" class="project-image-large local-img" src="../assets/images/pc.png" alt="Program Calculator">
 						<h4>Program Calculator</h4>
 					</div>
@@ -76,40 +69,31 @@
 				<hr>
 
 
-				<!-- OS Drivers -->
+				<!-- OS Drivers, Boot Sector -->
 				<div class="content-wrap">
 					<div class="col-narrow">
-						<img class="project-image-large" src="../assets/images/console_driver.png">
+						<img id="img3" class="project-image-large local-img" src="../assets/images/console_driver.png" alt="Console Driver">
 						<h4>Console Driver and Graphics Driver</h4>
+
+						<img id="img4" class="project-image-large local-img" src="../assets/images/boot_sector.png" alt="Splash Screen Boot Sector">
+						<h4>Splash Screen Boot Sector</h4>
+
 					</div>
 
 					<div class="col-wide">
 						<h3>Console Driver and Graphics Driver</h3>
 						<p class="date">October 2018</p>
-						<p class="ptype">Operating Systems Course Project</p>
-						<p class="description">Worked on drivers on a teaching OS (XV6).
-							C programming and assembly language. Worked on drivers on a teaching OS (XV6). Worked on drivers on a teaching OS (XV6).
-							C programming and assembly language.C programming and assembly language.</p>
-					</div>
-				</div>
-				<hr>
+						<p class="ptype">Course Project (Operating Systems)</p>
+						<p class="description">Extended the existing console device driver in XV6 OS to support colored text. Also created a brand new device driver for graphics display. These projects were implemented using C and Assembly Language.</p>
 
-
-				<!-- OS boot sector -->
-				<div class="content-wrap">
-					<div class="col-narrow">
-						<img class="project-image-large" src="../assets/images/boot_sector.png">
-						<h4>Splash Screen Boot Sector</h4>
-					</div>
-
-					<div class="col-wide">
+						<br>
 						<h3>Splash Screen Boot Sector</h3>
 						<p class="date">September 2018</p>
-						<p class="ptype">Operating Systems Course Project</p>
-						<p class="description">Worked on boot sector on XV6 .
-						Worked on boot sector on XV6 .Worked on boot sector on XV6 .Worked on boot sector on XV6 .Worked on boot sector on XV6 .Worked on boot sector on XV6 .Worked on boot sector on XV6 .</p>
-					</div>
+						<p class="ptype">Course Project (Operating Systems)</p>
+						<p class="description">Created a splash screen boot sector using BIOS services. This involved creating a "disk" containing the boot sector and the picture to be shown; waiting for the user to press a key, and outputting text on the console; changing the video mode and palette settings; reading an image from disk into memory and producing a nice-looking, alternative picture to display, in the right format.</p>
+					</div>  
 				</div>
+				<div class="more-projects"> <b>Other extensions to XV6 OS:</b> Added system calls like <b>mmap()</b> for memory mapping, <b>dedup()</b> for implementing a dedplication system wherein the kernel scans the system for duplicated pages and frees up memory by reusing identical physical memory page frames in several virtual memory locations. Added support for kernel threads to allow multi-threading by introducing thread management and association with processes and implementing system calls like <b>sys_clone()</b>, <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> and <b>exec()</b>. Added support for standard Unix signals. Added the /proc file system.</div>
 				<hr>
 
 				<div class="content-wrap">
@@ -177,6 +161,14 @@
 				</div>
 			</section>
 		</main>
+
+		<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>
+
 	
 	<script src="../js/modal.js"></script>
 
