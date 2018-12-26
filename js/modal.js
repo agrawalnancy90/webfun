@@ -6,6 +6,8 @@ var img1 = document.getElementById('img1');
 var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img4 = document.getElementById('img4');
+var img5 = document.getElementById('img5');
+
 
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -24,6 +26,10 @@ img3.onclick = function(){
 }
 
 img4.onclick = function(){
+	imageOnModal(this);
+}
+
+img5.onclick = function(){
 	imageOnModal(this);
 }
 
