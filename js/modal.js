@@ -7,6 +7,8 @@ var img2 = document.getElementById('img2');
 var img3 = document.getElementById('img3');
 var img4 = document.getElementById('img4');
 var img5 = document.getElementById('img5');
+var img6 = document.getElementById('img6');
+var img7 = document.getElementById('img7');
 
 
 var modalImg = document.getElementById("img01");
@@ -30,6 +32,14 @@ img4.onclick = function(){
 }
 
 img5.onclick = function(){
+	imageOnModal(this);
+}
+
+img6.onclick = function(){
+	imageOnModal(this);
+}
+
+img7.onclick = function(){
 	imageOnModal(this);
 }
 

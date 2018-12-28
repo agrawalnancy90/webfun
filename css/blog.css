@@ -106,3 +106,18 @@ a:hover {
 	color: white;
 }
 
+#navbar div.current-tab {
+  background-color: #f1f1f1;
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-style: italic;
+  font-family: monospace;
+}
+
+
+

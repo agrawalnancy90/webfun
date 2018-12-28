@@ -80,7 +80,7 @@
 }
 
 .rows {
-  background: black;
+  background: pink;
 }
 
 .cols .tile.schmancy {
@@ -98,14 +98,9 @@
 }
 
 .cols .tile.schmancy.pic2 {
-  background-image: url("../assets/images/iea-media-large.png");
+  background-image: url("../assets/images/blogging.jpg");
 }
 
-.cols .tile.schmancy.pic3 {
-  background-image: url("../assets/images/appdev4.jpg");
-}
-
-/************************************/
 
 /* typography and content of a tile */
 
