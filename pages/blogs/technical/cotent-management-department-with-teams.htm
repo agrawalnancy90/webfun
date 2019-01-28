@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- For backward compatibility -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Content Management</title>
+		<!-- [if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![end if] -->
+		<link rel="stylesheet" href="../../../css/blog.css">
+		<meta name="description" content="Content Management using appropriate access rights for different teams working on the same website.">
+	</head>
+	<body>
+		<header role="banner">
+			<div class="logo-center">
+				<hr>
+				<img src="../../../assets/images/blog-logo.png" alt="Promica Blogs Logo">
+				<hr>
+			</div>
+		</header>
+
+		<main role="main">
+			<h2>Content Management - User Groups and Access Rights</h2>
+			<p class="small-italics center">Posted on <time datetime="2018-09-03">November 2nd, 2018</time> by Nancy Agrawal</p>
+			
+			<p> Suppose you are an administrator of a website hosted on WordPress that belongs to a large department composed of several internal teams. Each team has its own content and its management hierarchy. Let us call this department as ‘Dept’ and let us say it has five internal teams T1, T2, T3, T4 and T5.<br>
+				<figure><img class="center-image" src="../../../assets/images/dept.png" width="40%"><br>
+				<p class="small-italics center">Figure 1: Illustrating a department ‘Dept’ composed of five teams, T1 - T5.</p>
+				</figure>
+			</p>
+
+			<p> As the site administrator, you want your website to look uniform across all teams. But you also want to give each team the freedom to manage their own content, while restricting them from meddling with other teams’ content. The situation demands some kind of grouping users such that WordPress users belonging to a team fall within the same WordPress group. You might also want to provide different roles and access levels within each team. WordPress does not come with this functionality out of the box. 
+An additional option with us is if we have the users and the permissions set up already in one CMS (say Drupal) and we are migrating those users and the corresponding permissions to WordPress. We will first explore this scenario. Next we will see how we can create the required user groups. For this latter part, we will explore some plugins in this blog that might solve our use cases. If required, we can develop our own custom plugin!
+			</p>
+
+			<p> The structure we are looking for is: <br>
+				Team<br>
+				<ul>
+					<li>Admin</li>
+					<li>Editor</li>
+					<li>Author</li>
+					<li>Contributor</li>
+					<li>Subscriber</li>
+				</ul>
+				 Each of these roles should be able to work only on the content created by this team. And we need global roles of each as well.
+			</p>
+			<h3>1. Migrating users from Drupal to WordPress using SQL queries</h3>
+			
+			<h3>2. Migrating users from Drupal to WordPress using Views Data Export module and WP All Import plugin</h3>
+			
+			<h3>3. Creating required access rights using User Role Editor plugin</h3>
+			
+			<h3>4. User Insights Plugin</h3>
+
+			<h3>5. Groups plugin</h3>
+
+			<h3>6. Members plugin</h3>
+
+			<h3>7. WPFront User Role Editor</h3>
+
+			<h3>8. Remove Dashboard Access plugin</h3>
+
+			<h3>9. Role Scoper plugin</h3>
+
+			<h3>10. Capability Manager Enhanced plugin</h3>
+
+			<h3>11. Nav Menu Roles plugin</h3>
+
+			<h3>12. Advanced Access Manager plugin</h3>
+
+			<h3>13. Develop custom plugin</h3>
+			
+										
+			</article>
+		</main>
+
+		<aside role="complementary">
+			<!--<h3>Ads</h3>-->
+		</aside>
+
+		<footer role="contactinfo"><!--disclaimer and contact me --></footer>
+
+	</body>
+</html>
+
