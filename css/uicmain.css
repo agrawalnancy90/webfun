@@ -1,0 +1,35 @@
+body.homepage {
+	background-image: url("../assets/images/background.jpg");
+  
+}
+
+.logo-center {
+	text-align: center;
+}
+
+.logo {
+	height: 5%;
+	width: 5%;
+	padding-top: 5%;
+}
+
+div.left-block {
+	line-height: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: red;
+    height: 50%;
+    width: 50%;
+}
+
+div.main-block {
+	display: flex;
+	justify-content: center;
+	 margin-left: 10px;
+	 margin-right: 10px;
+	 height: 500px;
+}
