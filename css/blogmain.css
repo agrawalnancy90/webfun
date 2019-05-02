@@ -155,7 +155,7 @@ a {
   color: black;
   padding-bottom: 2px;
   text-decoration: none;
-  border-bottom: 2px #f8c803 solid;
+  /*border-bottom: 2px #f8c803 solid;*/
 
 }
 
@@ -174,6 +174,10 @@ a.content-button:hover {
 /*--------------------------------------------------------------
 General styling
 --------------------------------------------------------------*/
+
+a[href="#"]:hover {
+  color: black;
+}
 
 .site {
   display: grid;
@@ -219,6 +223,18 @@ img{
   margin-top: 4em;
 }
 
+.sidebar .menu-links a {
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: bold;
+  padding: 10px; 
+}  
+
+.sidebar .menu-links a[href="#"] {
+  background: #BC8F8F;
+  text-decoration: none;
+} 
+
 .img-1 {
   background-color: #A9A9A9;
   grid-area: img1;
@@ -251,15 +267,62 @@ img{
 
 .masthead {
     grid-area: menu;
-    color: #000000;
-    text-align: right;
-    font-family: 'Niconne', cursive;
+    text-align: center;
+    /*font-family: 'Niconne', cursive;*/
+    font-family: 'monospace', cursive;
     padding-top: 10px;
+    background: black;
 }
 
-.masthead li {
-  display: inline;
+.masthead ul > li {
+    display: inline-block;
+    padding-inline-end: 0.5em;
+    font-size: 25px;
 }
+
+.menu-icons img {
+  padding-top: 40px;
+  height: 20%;
+  width: 20%;
+}
+
+.menu-link {
+   /* RESET */
+   text-decoration: none;
+   line-height: 1;
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #F5F5DC;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.menu-link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 0px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #A9A9A9 0%, #FEDBD0 100%);
+   transition: transform .25s ease-out;
+}
+/* #64b3f4 #c2e59c*/
+.menu-link:hover { 
+   color: #fff; 
+   text-decoration: none;
+}
+
+.menu-link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
+
 
 .center-vertical {
   padding-top: 100px;
@@ -270,9 +333,4 @@ img{
 .sidebar {
   grid-area: sidebar;
   background-color: #FEDBD0;
-}
-
-.footer-content {
-  grid-area: footer;
-    background-color: #0265c0;
 }
