@@ -1,0 +1,51 @@
+/* Grid styling */
+.main-grid {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+#owner {
+    width: 15%;
+    height: 100px;
+    float: left;
+}
+
+#menu {
+    margin-left: 15%;
+    height: 100px;
+}
+
+.main-grid #owner {font-family: 'Pacifico', cursive; font-size:2vw; padding-top: 30px; padding-bottom: 20px;}
+.main-grid #menu {text-align: right; padding-top: 30px; padding-bottom: 30px;}
+#menu a {color: #B6B4B3; font-family: 'Josefin Sans', sans-serif; font-size:1.5vw; text-decoration: none;}
+
+.featured-image {
+  width: -webkit-fill-available;
+}
+
+.article-title {
+  font-family: 'Josefin Sans', sans-serif; font-size:5vw; padding-top: 40px; text-align: center;
+}
+
+.article-subtitle {
+  font-family: 'Josefin Sans', sans-serif; font-size:3vw; text-align: center; padding-bottom: 40px;
+}
+
+.article {
+  font-size:1.6vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+  text-align: justify;
+  color: #585858;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer a {
+  text-decoration: none; font-size:1.5vw; font-family: 'Pacifico', cursive; color: black; padding-right: 30px;
+}
