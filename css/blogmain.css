@@ -175,7 +175,7 @@ a.content-button:hover {
 General styling
 --------------------------------------------------------------*/
 
-a[href="#"]:hover {
+a:hover {
   color: black;
 }
 
