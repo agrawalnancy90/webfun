@@ -97,14 +97,49 @@ header {
     padding: 5px;
 }
 
-/* Styling the profile photo */
-.profile-photo img {
-    width: 300px; /* Adjust width based on the image size */
+.gradient-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    height: 500px;
+    background: linear-gradient(to bottom, #185a9d, #43cea2);
+    padding: 40px;
+    position: relative; /* Ensure positioning context for child elements */
+    margin-bottom: 30px;
+}
+
+.gradient-div::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: whitesmoke;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Overflow content styles */
+.overflow-content img{
+    position: absolute; /* Allows this content to overflow */
+    top: 60px;
+    left: 200px; /* Adjust position within the div */
+    z-index: 1; /* Ensure it sits above other content */
+    width: 400px; /* Adjust width based on the image size */
     border-radius: 15px;
     border: 5px solid white;
 }
 
-/* Styling the intro text */
+.intro-text {
+    position: absolute; /* Allows this content to overflow */
+    top: 260px;
+    left: 700px; /* Adjust position within the div */
+    z-index: 1; /* Ensure it sits above other content */
+    text-align: center;
+    color: rgb(36, 34, 34); /* Text color */
+}
+
 .intro-text h1 {
     font-size: 2.5rem;
     margin: 0;
@@ -113,4 +148,28 @@ header {
 .intro-text p {
     font-size: 1.2rem;
     margin: 5px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .gradient-div {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center; /* Centers items */
+        height: auto; /* Adjust height for mobile */
+        padding: 20px 0; /* Vertical padding */
+    }
+
+    .overflow-content {
+        width: 80%; /* Adjust width for mobile */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .overflow-content img {
+        top: 0; /* Reset overflow on mobile */
+    }
+
+    .intro-text {
+        text-align: center; /* Center text on mobile */
+    }
 }
