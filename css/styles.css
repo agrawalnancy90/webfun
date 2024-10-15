@@ -45,64 +45,12 @@ footer {
     }
 }
 
-/* Header Styling */
-header {
-    background: linear-gradient(45deg, #43cea2, #185a9d);
-    padding: 50px;
-    color: white;
-}
-
-/* Grid layout */
-.header-grid {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-gap: 20px;
-    align-items: center;
-    text-align: center;
-}
-
-/* Styling the quote */
-.quote {
-    font-style: italic;
-    text-align: left;
-    padding-right: 20px;
-}
-
-.quote blockquote {
-    margin: 0;
-}
-
-.quote footer {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    background-color: #b1040e;
-    color: rgb(242, 235, 235);
-    padding: 5px;
-}
-
-#quote blockquote {
-    font-style: italic;
-    border-left: 4px solid #6a11cb;
-    padding-left: 20px;
-    color: #555;
-}
-
-#quote footer {
-    text-align: right;
-    color: rgb(242, 235, 235);
-    background-color: #b1040e;
-    font-weight: bold;
-    height: 20px;
-    padding: 5px;
-}
-
 .gradient-div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 70%;
-    height: 500px;
+    width: 80%;
+    height: 430px;
     background: linear-gradient(to bottom, #185a9d, #43cea2);
     padding: 40px;
     position: relative; /* Ensure positioning context for child elements */
@@ -123,8 +71,8 @@ header {
 /* Overflow content styles */
 .overflow-content img{
     position: absolute; /* Allows this content to overflow */
-    top: 60px;
-    left: 200px; /* Adjust position within the div */
+    top: 10%;
+    left: 25%; /* Adjust position within the div */
     z-index: 1; /* Ensure it sits above other content */
     width: 400px; /* Adjust width based on the image size */
     border-radius: 15px;
@@ -133,8 +81,8 @@ header {
 
 .intro-text {
     position: absolute; /* Allows this content to overflow */
-    top: 260px;
-    left: 700px; /* Adjust position within the div */
+    top: 20%;
+    left: 70%; /* Adjust position within the div */
     z-index: 1; /* Ensure it sits above other content */
     text-align: center;
     color: rgb(36, 34, 34); /* Text color */
@@ -148,6 +96,30 @@ header {
 .intro-text p {
     font-size: 1.2rem;
     margin: 5px 0;
+}
+
+/* Styling the quote */
+.quote {
+    font-style: italic;
+    text-align: left;
+    padding-right: 10px;
+    border-left: 4px solid #FFDB58;
+    padding-left: 20px;
+    color: #555;
+    margin-top: 100px;;
+}
+
+.quote blockquote {
+    margin: 0;
+}
+
+.quote footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #b1040e;
+    color: rgb(242, 235, 235);
+    padding: 5px;
 }
 
 /* Responsive design for smaller screens */
