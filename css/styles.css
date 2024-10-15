@@ -146,7 +146,6 @@ footer {
 }
 
 /* Career timeline styling */
-
 .timeline {
     display: flex;
     flex-direction: column;
@@ -175,55 +174,55 @@ footer {
     padding-left: 14px;
 }
 
-.timeline-card:hover .career-details {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
 .bus-stop {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #185a9d; /* Theme color */
     margin-right: 20px;
-    position: relative;
 }
 
+/* Heading and career details */
+.career-heading {
+    position: relative;
+    font-size: 1.2rem;
+    color: #185a9d;
+    cursor: pointer;
+}
+
+/* Initially hide the career details */
 .career-details {
     background-color: white;
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px);
+    position: absolute;
+    top: 5px;
+    left: 0;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
 }
 
-.career-details h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #185a9d; /* Theme color */
-}
-
-.career-details p {
-    margin-top: 5px;
-    color: #666;
+/* Show the career details on hover */
+.career-heading:hover .career-details {
+    opacity: 1;
+    visibility: visible;
 }
 
 @media (max-width: 768px) {
-    .timeline-card {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .timeline::before {
-        left: 15px;
+    .timeline {
+        padding-left: 20px;
     }
 
     .bus-stop {
-        margin-right: 0;
-        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .career-details {
+        width: auto;
+        left: 10px;
     }
 }
