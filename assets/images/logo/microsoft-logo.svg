@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" width="100" height="100">
+  <!-- Red Square -->
+  <rect width="40%" height="50%" fill="#F25022" x="10%" y="0"></rect>
+  
+  <!-- Green Square -->
+  <rect width="40%" height="50%" fill="#7FBA00" x="51%" y="0"></rect>
+  
+  <!-- Blue Square -->
+  <rect width="40%" height="50%" fill="#00A4EF" x="10%" y="51%"></rect>
+  
+  <!-- Yellow Square -->
+  <rect width="40%" height="50%" fill="#FFB900" x="51%" y="51%"></rect>
+</svg>

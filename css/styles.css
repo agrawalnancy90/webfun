@@ -152,6 +152,13 @@ footer {
     align-items: flex-start;
     position: relative;
 }
+.career-details-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 30px;
+}
 
 .timeline::before {
     content: '';
@@ -164,6 +171,17 @@ footer {
     z-index: -1;
 }
 
+.career-details-timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color:rgb(201, 201, 201); /* Your theme color */
+    top: 0;
+    bottom: 0;
+    left: 14px;
+    z-index: -1;
+} 
+
 .timeline-card {
     position: relative;
     display: flex;
@@ -174,6 +192,14 @@ footer {
     padding-left: 14px;
 }
 
+.timeline-detail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
 .bus-stop {
     width: 15px;
     height: 15px;
@@ -182,33 +208,82 @@ footer {
     margin-right: 20px;
 }
 
+.detail-bus-stop {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #b1040e; /* Theme color */
+    margin: 0 18px 0 2px;
+}
+
+
 /* Heading and career details */
 .career-heading {
     position: relative;
     font-size: 1.2rem;
-    color: #185a9d;
+    color: #1a1b1c;
     cursor: pointer;
+    overflow: visible;
+}
+
+.timeline-detail-heading {
+    position: relative;
+    font-size: 1rem;
+    color: #1a1b1c;
+    cursor: pointer;
+    overflow: visible;
 }
 
 /* Initially hide the career details */
 .career-details {
     background-color: white;
-    padding: 10px 20px;
+    padding: 10px 15px; 
     border-radius: 8px;
+    border: solid 2px #FFDB58;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 10%;
+    left: 105%;
+    transform: translateY(-50%); /* Center it vertically */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 100;
+    min-width: 500px;
 }
 
 /* Show the career details on hover */
 .career-heading:hover .career-details {
     opacity: 1;
     visibility: visible;
+}
+
+.org-header {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.org-title {
+    margin-left: 10px;
+}
+
+.work-duration {
+    color:rgb(140 127 127);
+    margin-left: 50px;
+    font-size: 0.9rem;
+
+}
+
+.role-duration {
+    color:rgb(140 127 127);
+    font-size: 0.8rem;
+}
+
+.career-summary {
+    font-size: 0.95rem;
+    color: #1a1b1c;
+    padding: 2px 18px;
 }
 
 @media (max-width: 768px) {
