@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+    <circle cx="50" cy="50" r="50" fill="#C60C30" /> <!-- Red circle background -->
+    <text x="50" y="65" font-family="Arial, sans-serif" font-size="40" fill="white" font-weight="bold" text-anchor="middle">UIC</text>
+</svg>
