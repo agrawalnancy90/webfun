@@ -217,15 +217,6 @@ footer {
     background-color: #185a9d;
 }
 
-.detail-bus-stop {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #b1040e; /* Theme color */
-    margin: 0 18px 0 2px;
-}
-
-
 /* Heading and career details */
 .career-heading {
     position: relative;
@@ -243,18 +234,19 @@ footer {
 
 /* Initially hide the career details */
 .career-details {
-    background-color: white;
+    position: absolute;
+    background: #f5f5dc;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    border: 2px solid #d2b48c;
     padding: 10px 15px; 
     border-radius: 8px;
-    border: solid 2px #FFDB58;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 10%;
-    left: 105%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-50%); /* Center it vertically */
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
     z-index: 100;
     min-width: 500px;
 }
@@ -283,11 +275,13 @@ footer {
 
 }
 
-.work-duration {
-    color:rgb(140 127 127);
-    margin-left: 50px;
-    font-size: 0.9rem;
-
+.career-footsteps {
+    display: flex;
+    padding: 30px 0 40px 10px;
+}
+.footstep {
+    width: 60px;
+    height: 60px;
 }
 
 .role-duration {
@@ -326,6 +320,18 @@ footer {
 }
 
 .fancy-title img {
+    height: 30px;
+    width: 30px;
+}
+
+.fancy-title-in-card {
+    font-size: 1.15rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.fancy-title-in-card img {
     height: 30px;
     width: 30px;
 }

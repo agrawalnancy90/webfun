@@ -1,0 +1,35 @@
+/* CSS Styling */
+
+/* Container for career title */
+.career-title {
+    position: relative;
+    font-size: 1.2rem;
+    color: #1a1b1c;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+/* Hidden parchment that appears on hover */
+.parchment {
+    position: absolute;
+    top: 110%; /* Position below title */
+    left: 0;
+    width: 100%;
+    background: #f5f5dc; /* Light parchment color */
+    border: 2px solid #d2b48c; /* Border to match parchment theme */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+    transform-origin: top; /* Unroll from the top */
+    transform: scaleY(0); /* Initially hidden */
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Hover effect on title to "unroll" the parchment */
+.career-title:hover + .parchment,
+.career-title:focus + .parchment {
+    transform: scaleY(1);
+    opacity: 1;
+}
