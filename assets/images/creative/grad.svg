@@ -1,0 +1,22 @@
+<svg width="100" height="100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cap base -->
+  <polygon points="12,3 2,8 12,13 22,8" fill="#4a4a4a" stroke="#000" stroke-width="1.5" />
+  
+  <!-- Button on top -->
+  <circle cx="12" cy="8" r="1" fill="#000" />
+
+   <!-- Band under cap -->
+  <path d="M 6,13 A 9,5 0 0,0 18,13 L 18,15 A 9,5 0 0,1 6,15 Z" fill="#d4af37" stroke="#000" stroke-width="0.5"/>
+
+  <!-- Cap underside -->
+  <polygon points="6,13 6,10 12,13" fill="#000" stroke="#000" stroke-width="0.5" />
+  <polygon points="18,13 18,10 12,13" fill="#000" stroke="#000" stroke-width="0.5" />
+  <path d="M 6,12 A 9,5 0 0,0 18,12 L 18,13 A 9,5 0 0,1 6,13 Z" fill="#000" stroke="#000" stroke-width="0.5"/>
+
+
+  <!-- Tassel string -->
+  <line x1="20" y1="9" x2="20" y2="15" stroke="#000" stroke-width="0.8" />
+
+  <!-- Tassel -->
+  <polygon points="20,15 19,18 21,18" fill="#d4af37" stroke="#000" stroke-width="0.5" />  
+</svg>
