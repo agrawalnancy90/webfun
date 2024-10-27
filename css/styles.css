@@ -151,6 +151,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
+    margin-top: 45px;
 }
 .career-details-timeline {
     display: flex;
@@ -165,8 +166,8 @@ footer {
     position: absolute;
     width: 2px;
     background-color: #43cea2; /* Your theme color */
-    top: 5px;
-    bottom: 5px;
+    top: -12px;
+    bottom: 24px;
     left: 20px;
     z-index: -1;
 }
@@ -186,10 +187,10 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 41px;
     border-radius: 10px;
     transition: all 0.3s ease;
-    padding-left: 15px;
+    padding-left: 18px;
 }
 
 .timeline-detail {
@@ -210,8 +211,8 @@ footer {
 }
 
 .bus-stop {
-    width: 12px;
-    height: 12px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: #185a9d;
 }
@@ -312,11 +313,13 @@ footer {
 .fancy-title {
     font-size: 1.15rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.fancy-title:hover {
-    transform: scale(1.05);
-    color: #43cea2;
+.fancy-title img {
+    height: 30px;
+    width: 30px;
 }
 
 /* Click or hover effect for the career details */

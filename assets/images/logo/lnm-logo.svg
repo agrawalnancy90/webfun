@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <!-- Text "LNMIIT" -->
+  <text x="0" y="95" font-family="Arial, sans-serif" font-size="52" fill="#1A5A99" font-weight="600">LNMIIT</text>
+
+  <!-- Orange squares forming an "L" shape -->
+  <rect x="162" y="45" width="10" height="10" fill="#D2691E" />
+  <rect x="175" y="45" width="10" height="10" fill="#D2691E" />
+  <rect x="188" y="45" width="10" height="10" fill="#D2691E" />
+  <rect x="175" y="57" width="10" height="10" fill="#D2691E" />
+  <rect x="188" y="57" width="10" height="10" fill="#D2691E" />
+  <rect x="188" y="70" width="10" height="10" fill="#D2691E" />
+</svg>
