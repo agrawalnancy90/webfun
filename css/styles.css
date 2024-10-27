@@ -272,7 +272,15 @@ footer {
     margin-left: 10px;
 }
 .org-title {
-    margin-left: 10px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.duration {
+    color:rgb(100, 96, 96);
+    font-size: 0.9rem;
+
 }
 
 .work-duration {
@@ -343,9 +351,9 @@ footer {
 }
 .expand-icon {
     display: inline-block;
-    margin-left: 8px;
+    margin-left: 20px;
     font-size: 0.9rem;
-    color: #185a9d;
+    color: #43cea2;
     transition: transform 0.3s ease;
 }
 
@@ -371,5 +379,33 @@ footer {
     }
     .fancy-title:hover {
         transform: none;
+    }
+}
+
+/* Pulse dot */
+.pulse-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #43cea2;
+    border-radius: 50%;
+    margin-left: 20px; /* Adjust spacing next to text */
+    position: relative;
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
