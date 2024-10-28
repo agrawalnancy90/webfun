@@ -1,0 +1,22 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Light Bulb Base -->
+  <rect x="80" y="230" width="40" height="30" fill="#B0B0B0"/>
+  
+  <!-- Spiral Filament -->
+    <path d="M85,195 Q95,200 105,190 T125,195" stroke="#FFA500" stroke-width="4" fill="none" />
+
+  <!-- Bulb Outline -->
+  <ellipse cx="100" cy="160" rx="45" ry="60" stroke="#FFD700" stroke-width="5" fill="transparent"/>
+
+  <!-- Glow Effect -->
+  <circle cx="100" cy="150" r="65" fill="none" stroke="rgba(255, 223, 0, 0.3)" stroke-width="20"/>
+  <circle cx="100" cy="150" r="85" fill="none" stroke="rgba(255, 223, 0, 0.2)" stroke-width="10"/>
+
+  <!-- Light Bulb Inner Yellow Fill -->
+  <ellipse cx="100" cy="160" rx="45" ry="60" fill="rgba(255, 223, 0, 0.5)" />
+
+  <!-- Base Details -->
+  <rect x="85" y="220" width="30" height="10" fill="#A0A0A0"/>
+  <line x1="85" y1="225" x2="115" y2="225" stroke="#707070" stroke-width="3" />
+  <line x1="85" y1="235" x2="115" y2="235" stroke="#707070" stroke-width="3" />
+</svg>

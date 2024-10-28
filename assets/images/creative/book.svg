@@ -1,0 +1,21 @@
+<svg width="100" height="80" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Left book cover -->
+  <path d="M10 10 L10 70 Q 30 60, 50 70 L50 10 Q 30 20, 10 10 Z" fill="#C2B280" stroke="#000" stroke-width="2"/>
+
+  <!-- Right book cover -->
+  <path d="M50 10 L50 70 Q 70 60, 90 70 L90 10 Q 70 20, 50 10 Z" fill="#C2B280" stroke="#000" stroke-width="2"/>
+
+  <!-- Center spine line -->
+  <line x1="50" y1="10" x2="50" y2="70" stroke="#000" stroke-width="1.5"/>
+
+  <!-- Text lines on left page -->
+  <line x1="15" y1="20" x2="45" y2="20" stroke="#8B4513" stroke-width="0.5"/>
+  <line x1="15" y1="25" x2="45" y2="25" stroke="#8B4513" stroke-width="0.5"/>
+  <line x1="15" y1="30" x2="45" y2="30" stroke="#8B4513" stroke-width="0.5"/>
+  <line x1="15" y1="35" x2="45" y2="35" stroke="#8B4513" stroke-width="0.5"/>
+  <line x1="15" y1="40" x2="45" y2="40" stroke="#8B4513" stroke-width="0.5"/>
+
+  <!-- Text lines on right page -->
+  <line x1="55" y1="20" x2="85" y2="20" stroke="#8B4513" stroke-width="0.5"/>
+  </svg>
