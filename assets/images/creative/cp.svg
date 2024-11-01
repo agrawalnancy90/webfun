@@ -1,0 +1,12 @@
+<svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laptop Screen -->
+  <rect x="30" y="30" width="140" height="80" fill="#d1d1d1" stroke="black" stroke-width="2" rx="5" ry="5"/>
+  <!-- Laptop Keyboard Base -->
+  <rect x="20" y="110" width="160" height="20" fill="#b3b3b3" stroke="black" stroke-width="2"/>
+  <!-- Screen Border -->
+  <rect x="35" y="35" width="130" height="70" fill="white" />
+
+  <!-- Text on Screen (optional) -->
+  <text x="55" y="70" font-family="Arial" font-size="40" fill="black">C</text>
+   <text x="55" y="90" font-family="Arial" font-size="16" fill="black">Programming</text>
+</svg>
