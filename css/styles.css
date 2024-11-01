@@ -191,6 +191,7 @@ footer {
     border-radius: 10px;
     transition: all 0.3s ease;
     padding-left: 18px;
+    width: 100%;
 }
 
 .timeline-detail {
@@ -222,6 +223,14 @@ footer {
     position: relative;
     cursor: pointer;
     overflow: visible;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.career-heading:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-detail-heading {
@@ -358,10 +367,14 @@ footer {
 }
 .expand-icon {
     display: inline-block;
-    margin-left: 20px;
-    font-size: 0.9rem;
+    margin-left: auto;
+    font-size: 1.2rem;
     color: #43cea2;
     transition: transform 0.3s ease;
+}
+
+.expando-container {
+    width: 100%;
 }
 
 .career-heading:hover .career-details,
@@ -396,7 +409,7 @@ footer {
     height: 10px;
     background-color: #43cea2;
     border-radius: 50%;
-    margin-left: 20px; /* Adjust spacing next to text */
+    margin-left: -2px;
     position: relative;
     animation: pulse 1.5s infinite;
 }
