@@ -314,12 +314,12 @@
 
     
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2>Fun Projects</h2>
 
         <div class="projects-container">
 
                 <!-- TicTacToeMagic -->
-                <div class="project-card">
+                <div class="project-card" data-id="1">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/tictactoemagic.png" alt="Tic Tac Toe">
@@ -343,14 +343,14 @@
                                 <span class="dot" data-page="1"></span>
                                 <span class="dot" data-page="2"></span>
                                 <span class="dot" data-page="3"></span>
-                                <div class="chevron" onclick="nextPage()">›</div>
+                                <div class="chevron" onclick="nextPage(1)">›</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Passwd As A Service -->
-                <div class="project-card">
+                <div class="project-card" data-id="2">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/api.png" alt="Password as a service API">
@@ -368,7 +368,7 @@
                 </div>
 
                 <!-- Food Allergen Detector -->	
-                <div class="project-card project-card--span-3">
+                <div class="project-card project-card--span-3" data-id="3">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/FAD.png" alt="Food Allergen Detector">
@@ -389,7 +389,7 @@
                 </div>
 
                 <!-- Smalltalk Set Calculator -->
-                <div class="project-card">
+                <div class="project-card" data-id="4">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/Set_Calculator.png" alt="Set Calculator">
@@ -406,7 +406,7 @@
                 </div>
 
                 <!-- Smalltalk Program Calculator -->
-                <div class="project-card">
+                <div class="project-card" data-id="5">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/pc.png" alt="Program Calculator">
@@ -423,7 +423,7 @@
                 </div>
 
                 <!-- C++ Projects -->
-                <div class="project-card">
+                <div class="project-card" data-id="6">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <h3>C++ Projects</h3>
@@ -445,7 +445,7 @@
                 </div>
 
                 <!-- WAR Game -->
-                <div class="project-card">
+                <div class="project-card" data-id="7">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/war.png" alt="Online Card Game (War)">
@@ -464,19 +464,19 @@
                 </div>
 
                 <!-- Computer Networks -->
-                <div class="project-card">
+                <div class="project-card" data-id="8">
                     <div class="project-card-inner">
                         <div class="project-card-front">
-                            <h3>Networking Projects</h3>
-                            Investigated network traffic using Wireshark; implemented a 
-                            barebones HTTP/1.1 client, 
-                            a recursive DNS resolver and a reliable communication over an unreliable link, just like TCP.
+                            <h3>Computer Networks</h3>
+                            Developed network tools including a packet analyzer with Wireshark, an HTTP/1.1 client, 
+                            a recursive DNS resolver, and a TCP-like protocol for reliable data transfer, 
+                            showcasing proficiency in network protocols and communication reliability."
                         </div>
                     </div>
                 </div>
 
                 <!-- OS Drivers, Boot Sector -->
-                <div class="project-card">
+                <div class="project-card" data-id="9">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/console_driver.png" alt="Console Driver">
@@ -493,7 +493,7 @@
                 </div>
 
                 <!-- Splash Screen Boot Sector -->
-                <div class="project-card">
+                <div class="project-card" data-id="10">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/boot_sector.png" alt="Splash Screen Boot Sector">
@@ -511,19 +511,33 @@
                     </div>
                 </div>
 
-                <!-- XV6 OS Extensions -->
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <h3>Extensions to XV6 OS</h3>
-                            Added system calls like <b>mmap()</b> for memory mapping, <b>dedup()</b> for implementing a 
-                            dedplication  system wherein the kernel scans the system for duplicated pages and frees up 
-                            memory by reusing identical physical memory page frames in several virtual memory locations.
-                            Added support for kernel threads to allow multi-threading by introducing thread management and 
-                            association with processes and implementing system calls like <b>sys_clone()</b>, 
-                            <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> and <b>exec()</b>. 
-                            Added support for standard Unix signals. Added the /proc file system.
-                        </div>
+                <!-- XV6 OS -->
+                <div class="project-card no-flip" data-id="11">
+                    <div class="page" id="page-1">
+                        <h3>XV6 OS</h3>
+                        Enhanced the XV6 OS with key system calls, such as <b>mmap()</b> for memory mapping and <b>dedup()</b> for implementing a 
+                        dedplication  system wherein the kernel scans the system for duplicated pages and frees up 
+                        memory by reusing identical physical memory page frames in several virtual memory locations.  
+                    </div>
+                    <div class="page" id="page-2">
+                        Introduced kernel thread support, enabling multi-threading by implementing system calls like <b>sys_clone()</b>, <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> 
+                        and <b>exec()</b> for thread and process management.
+                    </div>
+                    <div class="page" id="page-3">
+                        Integrated standard Unix signals and implemented the <b>/proc</b> file system, expanding the OS with features for process interaction and system information retrieval.
+                    </div>
+                    <div class="page" id="page-3">
+                        <b>Category:</b> Course project<br><br>
+                        <b>Course:</b> Operating Systems<br><br>
+                        <b>When:</b> Fall 2017 at UIC
+                    </div>
+                    <!-- Pagination controls -->
+                    <div class="pagination">
+                        <span class="dot" data-page="1"></span>
+                        <span class="dot" data-page="2"></span>
+                        <span class="dot" data-page="3"></span>
+                        <span class="dot" data-page="4"></span>
+                        <div class="chevron" onclick="nextPage(1)">›</div>
                     </div>
                 </div>
 
