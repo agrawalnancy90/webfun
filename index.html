@@ -10,6 +10,12 @@
 </head>
 <body>
     <header class="gradient-div">
+            <div id="navbar">
+                <div class="align_center content">
+                  <a href="pages/blogs/technical/content-migration-drupal-to-wp.htm">Blogs</a>
+                </div>
+            </div>
+        </header>
         <div class="overflow-content">
             <img src="assets/images/myPics/Nancy-dp-metaai.JPG" alt="Nancy Agrawal">
         </div>
@@ -311,36 +317,34 @@
         <h2>My Projects</h2>
 
         <div class="projects-container">
-                <!-- Test large card -->
-                <div class="project-card project-card--span-2">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="assets/images/tictactoemagic.png" alt="Tic Tac Toe">
-                            <h3>TicTacToeMagic</h3>
-                        </div>
-                        <div class="project-card-back">
-                            Live on Google Play Store. It is a classic tic-tac-toe game based on Harry Potter theme. 
-                                You get to choose whether you start the game as a muggle or as a witch / wizard. If you lose a game, Moaning Myrtle annoys you with her moan. 
-                                If you win, you get assigned to a new house (Griffindor / Hufflepuff / Slytherin / Ravenclaw) and you earn points for your current house.
-                        </div>
-                    </div>
-                </div>
 
                 <!-- TicTacToeMagic -->
                 <div class="project-card">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/tictactoemagic.png" alt="Tic Tac Toe">
-                            <h3>TicTacToeMagic - An android app</h3>
+                            <h3>TicTacToeMagic</h3>
                         </div>
                         <div class="project-card-back">
-                            <p class="date">July 2018 - Present</p>
-						    <p class="ptype">Hobby Project</p>
-                            <p>This app gives a magical experience along with a classic game.</p>
-                            Live on Google Play Store - <a href="https://play.google.com/store/apps/details?id=com.project.games.tictactoe&amp;hl=en_US" target="_blank">
-                                here.</a> It is a classic tic-tac-toe game based on Harry Potter theme. 
-                                You get to choose whether you start the game as a muggle or as a witch / wizard. If you lose a game, Moaning Myrtle annoys you with her moan. 
-                                If you win, you get assigned to a new house (Griffindor / Hufflepuff / Slytherin / Ravenclaw) and you earn points for your current house.
+                            <div class="page" id="page-1">
+                                <b>TicTacToeMagic</b> is an Android game I developed under the alias PromicaDev, combining a classic tic-tac-toe game with a Harry Potter-inspired theme.                              
+                            </div>
+                            <div class="page" id="page-2">
+                                Designed with engaging sound and visual effects, the game lets users choose between muggle and wizard modes. Winning adds points to Hogwarts houses, 
+                                while losing triggers Moaning Myrtle’s voice for an immersive experience. 
+                            </div>
+                            <div class="page" id="page-3">
+                                <b>Skills:</b> Android development, user experience design, and integrating thematic elements to enhance gameplay.<br><br>
+                                <b>Category:</b> Hobby project<br><br>
+                                <b>When:</b> Published on Google Play Store in July 2018
+                            </div>
+                            <!-- Pagination controls -->
+                            <div class="pagination">
+                                <span class="dot" data-page="1"></span>
+                                <span class="dot" data-page="2"></span>
+                                <span class="dot" data-page="3"></span>
+                                <div class="chevron" onclick="nextPage()">›</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -364,7 +368,7 @@
                 </div>
 
                 <!-- Food Allergen Detector -->	
-                <div class="project-card">
+                <div class="project-card project-card--span-3">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/FAD.png" alt="Food Allergen Detector">
@@ -637,5 +641,6 @@
 
     <!-- The JavaScript file -->
     <script src="js/main.js"></script>
+    <script src="js/pagination.js"></script>
 </body>
 </html>
