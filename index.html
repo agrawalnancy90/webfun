@@ -417,24 +417,29 @@
                 </div>
 
                 <!-- C++ Projects -->
-                <div class="project-card" data-id="6">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <h3>C++ Projects</h3>
-                            <ul>
-                                <li>
-                                    <b>Music Library Service: </b>
-                                    The service maintains a set of audio files containing a large number of songs and delivers a music
-                                    file upon demand from a service user. These music clips are stored in files most of the time and 
-                                    are dynamically read into memory using smart pointers.
-                                </li>
-                                <li>
-                                    <b>Programmable Calculator: </b>
-                                    Supports branching, assignment and mathematical expressions in the program. Also provides debugging 
-                                    functionality.
-                                </li>
-                            </ul>
-                        </div>
+                <div class="project-card no-flip" data-id="6">
+                    <div class="page" id="page-1">
+                        <h3>Music Library Service</h3>
+                        Designed a service to manage and serve a vast collection of audio files upon user request.
+                        Audio files are stored in files and dynamically loaded into memory using smart pointers.
+                    </div>
+                    <div class="page" id="page-2">
+                        <h3>Programmable Calculator</h3>
+                        Developed a calculator supporting branching, assignment, and mathematical expressions.
+                        Provided debugging functionality for error tracking and program flow inspection.
+                    </div>
+                    <div class="page" id="page-3">
+                        <b>Category:</b> Course project<br><br>
+                        <b>Course:</b> Obj-Oriented Langs & Envs (C++)<br><br>
+                        <b>When:</b> Fall 2018 at UIC
+                    </div>
+                    
+                    <!-- Pagination Controls -->
+                    <div class="pagination">
+                        <span class="dot" data-page="1"></span>
+                        <span class="dot" data-page="2"></span>
+                        <span class="dot" data-page="3"></span>
+                        <div class="chevron" onclick="nextPage(1)">›</div>
                     </div>
                 </div>
 
@@ -477,6 +482,36 @@
                     </div>
                 </div>
 
+                   <!-- XV6 OS -->
+                   <div class="project-card no-flip" data-id="11">
+                    <div class="page" id="page-1">
+                        <h3>XV6 OS</h3>
+                        Enhanced the XV6 OS with key system calls, such as <b>mmap()</b> for memory mapping and <b>dedup()</b> for implementing a 
+                        dedplication  system wherein the kernel scans the system for duplicated pages and frees up 
+                        memory by reusing identical physical memory page frames in several virtual memory locations.  
+                    </div>
+                    <div class="page" id="page-2">
+                        Introduced kernel thread support, enabling multi-threading by implementing system calls like <b>sys_clone()</b>, <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> 
+                        and <b>exec()</b> for thread and process management.
+                    </div>
+                    <div class="page" id="page-3">
+                        Integrated standard Unix signals and implemented the <b>/proc</b> file system, expanding the OS with features for process interaction and system information retrieval.
+                    </div>
+                    <div class="page" id="page-3">
+                        <b>Category:</b> Course project<br><br>
+                        <b>Course:</b> Operating Systems<br><br>
+                        <b>When:</b> Fall 2017 at UIC
+                    </div>
+                    <!-- Pagination controls -->
+                    <div class="pagination">
+                        <span class="dot" data-page="1"></span>
+                        <span class="dot" data-page="2"></span>
+                        <span class="dot" data-page="3"></span>
+                        <span class="dot" data-page="4"></span>
+                        <div class="chevron" onclick="nextPage(1)">›</div>
+                    </div>
+                </div>
+
                 <!-- OS Drivers, Boot Sector -->
                 <div class="project-card" data-id="9">
                     <div class="project-card-inner">
@@ -512,37 +547,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- XV6 OS -->
-                <div class="project-card no-flip" data-id="11">
-                    <div class="page" id="page-1">
-                        <h3>XV6 OS</h3>
-                        Enhanced the XV6 OS with key system calls, such as <b>mmap()</b> for memory mapping and <b>dedup()</b> for implementing a 
-                        dedplication  system wherein the kernel scans the system for duplicated pages and frees up 
-                        memory by reusing identical physical memory page frames in several virtual memory locations.  
-                    </div>
-                    <div class="page" id="page-2">
-                        Introduced kernel thread support, enabling multi-threading by implementing system calls like <b>sys_clone()</b>, <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> 
-                        and <b>exec()</b> for thread and process management.
-                    </div>
-                    <div class="page" id="page-3">
-                        Integrated standard Unix signals and implemented the <b>/proc</b> file system, expanding the OS with features for process interaction and system information retrieval.
-                    </div>
-                    <div class="page" id="page-3">
-                        <b>Category:</b> Course project<br><br>
-                        <b>Course:</b> Operating Systems<br><br>
-                        <b>When:</b> Fall 2017 at UIC
-                    </div>
-                    <!-- Pagination controls -->
-                    <div class="pagination">
-                        <span class="dot" data-page="1"></span>
-                        <span class="dot" data-page="2"></span>
-                        <span class="dot" data-page="3"></span>
-                        <span class="dot" data-page="4"></span>
-                        <div class="chevron" onclick="nextPage(1)">›</div>
-                    </div>
-                </div>
-
 
                 <!-- Reality Mining -->
                 <div class="project-card">
