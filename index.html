@@ -348,15 +348,24 @@
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/api.png" alt="Password as a service API">
-                            <h3>Passwd as a Service - A toy API</h3>
+                            <h3>Passwd as a Service</h3>
                         </div>
                         <div class="project-card-back">
-                            <h3>Passwd as a Service</h3>
-                            <p class="date">Jan 2019</p>
-                            <p class="ptype">Hobby Project</p>
-                            <a href="https://github.com/agrawalnancy90/api" target="_blank">Link to API</a>
-                            <p class="description">A toy HTTP service that exposes the user and group information 
-                                on a UNIX-like system that is usually locked away in the UNIX /etc/passwd and /etc/groups files.</p>                   
+                            <div class="page" id="page-1">
+                                <b>Passwd as a Service</b> is a toy HTTP service that exposes the user and group information 
+                                on a UNIX-like system that is usually locked away in the UNIX /etc/passwd and /etc/groups files.                              
+                            </div>
+                            <div class="page" id="page-2">
+                                <b>Skills:</b> UNIX/Linux systems, RESTful API design, HTTP protocol<br><br>
+                                <b>Category:</b> Hobby project<br><br>
+                                <b>When:</b> Published on <a href="https://github.com/agrawalnancy90/api" target="_blank">github</a> in January 2019
+                            </div>
+                            <!-- Pagination controls -->
+                            <div class="pagination">
+                                <span class="dot" data-page="1"></span>
+                                <span class="dot" data-page="2"></span>
+                                <div class="chevron" onclick="nextPage(1)">›</div>
+                            </div>              
                         </div>
                     </div>
                 </div>
@@ -638,16 +647,6 @@
                     </div>
                 </div>
         </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>React</li>
-            <li>Mobx</li>
-            <li>Typescript / Javascript</li>
-            <!-- List more skills -->
-        </ul>
     </section>
   
     <section id="contact">
