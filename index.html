@@ -312,70 +312,203 @@
 
         <div class="projects-container">
 
-                <!-- TicTacToeMagic -->
-                <div class="project-card" data-id="1">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="assets/images/tictactoemagic.png" alt="Tic Tac Toe">
-                            <h3>TicTacToeMagic</h3>
+            <!-- Console Driver and Graphics Driver  -->
+            <div class="project-card project-card--span-3" data-id="9">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="assets/images/console_driver.png" alt="Console Driver">   
+                        <h4>Console Driver and Graphics Driver</h4>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="page" id="page-1">
+                            Extended the existing console device driver in XV6 OS to support colored text. 
+                            Also created a brand new device driver for graphics display. These projects were implemented using 
+                            C and Assembly Language.                              
                         </div>
-                        <div class="project-card-back">
-                            <div class="page" id="page-1">
-                                <b>TicTacToeMagic</b> is an Android game I developed under the alias PromicaDev, combining a classic tic-tac-toe game with a Harry Potter-inspired theme.                              
-                            </div>
-                            <div class="page" id="page-2">
-                                Designed with engaging sound and visual effects, the game lets users choose between muggle and wizard modes. Winning adds points to Hogwarts houses, 
-                                while losing triggers Moaning Myrtle’s voice for an immersive experience. 
-                            </div>
-                            <div class="page" id="page-3">
-                                <b>Skills:</b> Android development, user experience design, and integrating thematic elements to enhance gameplay.<br><br>
-                                <b>Category:</b> Hobby project<br><br>
-                                <b>When:</b> Published on Google Play Store in July 2018
-                            </div>
-                            <!-- Pagination controls -->
-                            <div class="pagination">
-                                <span class="dot" data-page="1"></span>
-                                <span class="dot" data-page="2"></span>
-                                <span class="dot" data-page="3"></span>
-                                <div class="chevron" onclick="nextPage(1)">›</div>
-                            </div>
+                        <div class="page" id="page-2">
+                            <b>Skills:</b> C, Assembly Language, Device Driver Development, Console I/O, Graphics Programming, 
+                            Low-Level Programming, Memory Management, XV6 OS, Interrupt Handling, Kernel Development.<br><br>
+                            <b>Category:</b> Course project (Operating Systems)<br><br>
+                            <b>When:</b> Fall 2017 at UIC
                         </div>
+                        <!-- Pagination controls -->
+                        <div class="pagination">
+                            <span class="dot" data-page="1"></span>
+                            <span class="dot" data-page="2"></span>
+                            <div class="chevron" onclick="nextPage(1)">›</div>
+                        </div>    
                     </div>
                 </div>
+            </div>
 
-                <!-- Passwd As A Service -->
-                <div class="project-card" data-id="2">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="assets/images/api.png" alt="Password as a service API">
-                            <h3>Passwd as a Service</h3>
+             <!-- XV6 OS -->
+             <div class="project-card no-flip" data-id="11">
+                <div class="page" id="page-1">
+                    <h3>XV6 OS</h3>
+                    Enhanced the XV6 OS with key system calls, such as <b>mmap()</b> for memory mapping and <b>dedup()</b> for implementing a 
+                    dedplication  system wherein the kernel scans the system for duplicated pages and frees up 
+                    memory by reusing identical physical memory page frames in several virtual memory locations.  
+                </div>
+                <div class="page" id="page-2">
+                    Introduced kernel thread support, enabling multi-threading by implementing system calls like <b>sys_clone()</b>, <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> 
+                    and <b>exec()</b> for thread and process management.
+                </div>
+                <div class="page" id="page-3">
+                    Integrated standard Unix signals and implemented the <b>/proc</b> file system, expanding the OS with features for process interaction and system information retrieval.
+                </div>
+                <div class="page" id="page-3">
+                    <b>Category:</b> Course project<br><br>
+                    <b>Course:</b> Operating Systems<br><br>
+                    <b>When:</b> Fall 2017 at UIC
+                </div>
+                <!-- Pagination controls -->
+                <div class="pagination">
+                    <span class="dot" data-page="1"></span>
+                    <span class="dot" data-page="2"></span>
+                    <span class="dot" data-page="3"></span>
+                    <span class="dot" data-page="4"></span>
+                    <div class="chevron" onclick="nextPage(1)">›</div>
+                </div>
+            </div>
+
+            <!-- Splash Screen Boot Sector -->
+            <div class="project-card" data-id="10">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img class="small-img" src="assets/images/boot_sector.png" alt="Splash Screen Boot Sector">
+                        <h4>Splash Screen Boot Sector</h4>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="page" id="page-1">
+                            Created a splash screen boot sector using BIOS services. This involved 
+                            creating a "disk" containing the boot sector and the picture to be shown, waiting for the 
+                            user to press a key, and outputting text on the console, changing the video mode and palette 
+                            settings, reading an image from disk into memory and producing a nice-looking, alternative 
+                            picture to display, in the right format.
                         </div>
-                        <div class="project-card-back">
-                            <div class="page" id="page-1">
-                                <b>Passwd as a Service</b> is a toy HTTP service that exposes the user and group information 
-                                on a UNIX-like system that is usually locked away in the UNIX /etc/passwd and /etc/groups files.                              
-                            </div>
-                            <div class="page" id="page-2">
-                                <b>Skills:</b> UNIX/Linux systems, RESTful API design, HTTP protocol<br><br>
-                                <b>Category:</b> Hobby project<br><br>
-                                <b>When:</b> Published on <a href="https://github.com/agrawalnancy90/api" target="_blank">github</a> in January 2019
-                            </div>
-                            <!-- Pagination controls -->
-                            <div class="pagination">
-                                <span class="dot" data-page="1"></span>
-                                <span class="dot" data-page="2"></span>
-                                <div class="chevron" onclick="nextPage(1)">›</div>
-                            </div>              
+                        <div class="page" id="page-2">
+                            <b>Skills:</b> Bootloader Development, BIOS Programming, Assembly Language, Disk I/O, Memory Management, Graphics Programming, Video Mode Control, Palette Manipulation, Interrupt Handling<br><br>
+                            <b>Category:</b> Course Project (Operating Systems)<br><br>
+                            <b>When:</b> Fall 2017 at UIC
+                        </div>
+                        <!-- Pagination controls -->
+                        <div class="pagination">
+                            <span class="dot" data-page="1"></span>
+                            <span class="dot" data-page="2"></span>
+                            <div class="chevron" onclick="nextPage(1)">›</div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- TicTacToeMagic -->
+            <div class="project-card" data-id="1">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img class="small-img" src="assets/images/tictactoemagic.png" alt="Tic Tac Toe">
+                        <h4>TicTacToeMagic</h4>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="page" id="page-1">
+                            <b>TicTacToeMagic</b> is an Android game I developed under the alias PromicaDev, combining a classic tic-tac-toe game with a Harry Potter-inspired theme.                              
+                        </div>
+                        <div class="page" id="page-2">
+                            Designed with engaging sound and visual effects, the game lets users choose between muggle and wizard modes. Winning adds points to Hogwarts houses, 
+                            while losing triggers Moaning Myrtle’s voice for an immersive experience. 
+                        </div>
+                        <div class="page" id="page-3">
+                            <b>Skills:</b> Android development, user experience design, and integrating thematic elements to enhance gameplay.<br><br>
+                            <b>Category:</b> Hobby project<br><br>
+                            <b>When:</b> Published on Google Play Store in July 2018
+                        </div>
+                        <!-- Pagination controls -->
+                        <div class="pagination">
+                            <span class="dot" data-page="1"></span>
+                            <span class="dot" data-page="2"></span>
+                            <span class="dot" data-page="3"></span>
+                            <div class="chevron" onclick="nextPage(1)">›</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Passwd As A Service -->
+            <div class="project-card" data-id="2">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="assets/images/api.png" alt="Password as a service API">
+                        <h4>Passwd as a Service</h4>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="page" id="page-1">
+                            <b>Passwd as a Service</b> is a toy HTTP service that exposes the user and group information 
+                            on a UNIX-like system that is usually locked away in the UNIX /etc/passwd and /etc/groups files.                              
+                        </div>
+                        <div class="page" id="page-2">
+                            <b>Skills:</b> UNIX/Linux systems, RESTful API design, HTTP protocol<br><br>
+                            <b>Category:</b> Hobby project<br><br>
+                            <b>When:</b> Published on <a href="https://github.com/agrawalnancy90/api" target="_blank">github</a> in January 2019
+                        </div>
+                        <!-- Pagination controls -->
+                        <div class="pagination">
+                            <span class="dot" data-page="1"></span>
+                            <span class="dot" data-page="2"></span>
+                            <div class="chevron" onclick="nextPage(1)">›</div>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smalltalk projects overview -->
+            <div class="project-card project-card--wide no-flip--wide" data-id="12">
+                <div class="page" id="page-1">
+                    <h3>Projects Using the First General-Purpose Object-Oriented Language</h3>
+                    <b>Smalltalk</b> is a pure object oriented language (unlike C++) which is great for building prototypes due to its OO features.<br/><br/>
+                    <img src="assets/images/spectrumOfOOLanguages.png" alt="Spectrum of Object Oriented Languages"> 
+                    <br/>
+                    <p>This is a screenshot borrowed from Prof. Ugo Buy's slides depicting the spectrum of object oriented languages.</p><br/> 
+                </div>
+                <div class="page" id="page-2">
+                    It's <b>dynamincally typed</b> which means you can bind any object to any type of identifier (like in Python). <br/>
+                    It is <b>garbage collected</b>, so you do not have to worry about deallocating memory (like Java). <br/> 
+                    It has <b>single inheritance</b> (like C# and Java and unlike Python) which means you do not have to worry about identifier conflicts of data members and methods inherited from multiple classes. <br/>
+                    Identifiers are only <b>references</b> (like Java) so we don't have to deal with the complexities introduced by value identifiers. <br/>
+                    It is <b>interpreted</b> (like Python) so you don't need to save separate files for tiny test code snippets... just write it on the IDE and the interpreter gives the effect of the code on each line right away. <br/>
+                    And, it's a really small language! Plus, it provides you a GUI!
+                </div>
+                <div class="page" id="page-3">
+                    <div class="mult-projects">
+                        <div class="single-project">
+                            <img src="assets/images/Set_Calculator.png" alt="Set Calculator">
+                            <h4>Smalltalk Set Calculator</h4>
+                        </div>
+                        <div class="single-project">
+                            <img src="assets/images/pc.png" alt="Program Calculator">
+                            <h4>Smalltalk Program Calculator</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" id="page-4">
+                    <b>Category:</b> Course project<br><br>
+                    <b>Course:</b> Object Oriented Languages and Environment<br><br>
+                    <b>When:</b> Fall 2018 at UIC
+                </div>
+                <!-- Pagination controls -->
+                <div class="pagination">
+                    <span class="dot" data-page="1"></span>
+                    <span class="dot" data-page="2"></span>
+                    <span class="dot" data-page="3"></span>
+                    <span class="dot" data-page="4"></span>
+                    <div class="chevron" onclick="nextPage(1)">›</div>
+                </div>
+            </div>
 
                 <!-- Food Allergen Detector -->	
                 <div class="project-card project-card--span-3" data-id="3">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/FAD.png" alt="Food Allergen Detector">
-                            <h3>Food Allergen Detector</h3>
+                            <h4>Food Allergen Detector</h4>
                         </div>
                         <div class="project-card-back">
                             <p class="date">August 2018 - November 2018</p>
@@ -388,50 +521,6 @@
 						    <p>We also designed a virual reality project called 'Mind Palace' using Waterfall model and following 
                             the Software Development Life Cycle.</p>
                         </div>
-                    </div>
-                </div>
-
-                 <!-- Smalltalk projects overview -->
-                 <div class="project-card project-card--wide no-flip--wide" data-id="12">
-                    <div class="page" id="page-1">
-                        <h3>Projects Using the First General-Purpose Object-Oriented Language</h3>
-                        <b>Smalltalk</b> is a pure object oriented language (unlike C++) which is great for building prototypes due to its OO features.<br/><br/>
-                        <img src="assets/images/spectrumOfOOLanguages.png" alt="Spectrum of Object Oriented Languages"> 
-                        <br/>
-                        <p>This is a screenshot borrowed from Prof. Ugo Buy's slides depicting the spectrum of object oriented languages.</p><br/> 
-                    </div>
-                    <div class="page" id="page-2">
-                        It's <b>dynamincally typed</b> which means you can bind any object to any type of identifier (like in Python). <br/>
-                        It is <b>garbage collected</b>, so you do not have to worry about deallocating memory (like Java). <br/> 
-                        It has <b>single inheritance</b> (like C# and Java and unlike Python) which means you do not have to worry about identifier conflicts of data members and methods inherited from multiple classes. <br/>
-                        Identifiers are only <b>references</b> (like Java) so we don't have to deal with the complexities introduced by value identifiers. <br/>
-                        It is <b>interpreted</b> (like Python) so you don't need to save separate files for tiny test code snippets... just write it on the IDE and the interpreter gives the effect of the code on each line right away. <br/>
-                        And, it's a really small language! Plus, it provides you a GUI!
-                    </div>
-                    <div class="page" id="page-3">
-                        <div class="mult-projects">
-                            <div class="single-project">
-                                <img src="assets/images/Set_Calculator.png" alt="Set Calculator">
-                                <h4>Smalltalk Set Calculator</h4>
-                            </div>
-                            <div class="single-project">
-                                <img src="assets/images/pc.png" alt="Program Calculator">
-                                <h4>Smalltalk Program Calculator</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page" id="page-4">
-                        <b>Category:</b> Course project<br><br>
-                        <b>Course:</b> Object Oriented Languages and Environment<br><br>
-                        <b>When:</b> Fall 2018 at UIC
-                    </div>
-                    <!-- Pagination controls -->
-                    <div class="pagination">
-                        <span class="dot" data-page="1"></span>
-                        <span class="dot" data-page="2"></span>
-                        <span class="dot" data-page="3"></span>
-                        <span class="dot" data-page="4"></span>
-                        <div class="chevron" onclick="nextPage(1)">›</div>
                     </div>
                 </div>
 
@@ -467,7 +556,7 @@
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/war.png" alt="Online Card Game (War)">
-                            <h3>Online Card Game (War)</h3>
+                            <h4>Online Card Game (War)</h4>
                         </div>
                         <div class="project-card-back">
                             <p class="date">March 2018</p>
@@ -484,7 +573,7 @@
                 <!-- Computer Networks -->
                 <div class="project-card no-flip" data-id="8">
                     <div class="page" id="page-1">
-                            <h3>Computer Networks</h3>
+                            <h4>Computer Networks</h4>
                             Developed network tools including a packet analyzer with Wireshark, an HTTP/1.1 client, 
                             a recursive DNS resolver, and a TCP-like protocol for reliable data transfer, 
                             showcasing proficiency in network protocols and communication reliability.
@@ -501,78 +590,12 @@
                     </div>
                 </div>
 
-                   <!-- XV6 OS -->
-                   <div class="project-card no-flip" data-id="11">
-                    <div class="page" id="page-1">
-                        <h3>XV6 OS</h3>
-                        Enhanced the XV6 OS with key system calls, such as <b>mmap()</b> for memory mapping and <b>dedup()</b> for implementing a 
-                        dedplication  system wherein the kernel scans the system for duplicated pages and frees up 
-                        memory by reusing identical physical memory page frames in several virtual memory locations.  
-                    </div>
-                    <div class="page" id="page-2">
-                        Introduced kernel thread support, enabling multi-threading by implementing system calls like <b>sys_clone()</b>, <b>thread_exit()</b>, <b>process_exit()</b>, <b>thread_join()</b> 
-                        and <b>exec()</b> for thread and process management.
-                    </div>
-                    <div class="page" id="page-3">
-                        Integrated standard Unix signals and implemented the <b>/proc</b> file system, expanding the OS with features for process interaction and system information retrieval.
-                    </div>
-                    <div class="page" id="page-3">
-                        <b>Category:</b> Course project<br><br>
-                        <b>Course:</b> Operating Systems<br><br>
-                        <b>When:</b> Fall 2017 at UIC
-                    </div>
-                    <!-- Pagination controls -->
-                    <div class="pagination">
-                        <span class="dot" data-page="1"></span>
-                        <span class="dot" data-page="2"></span>
-                        <span class="dot" data-page="3"></span>
-                        <span class="dot" data-page="4"></span>
-                        <div class="chevron" onclick="nextPage(1)">›</div>
-                    </div>
-                </div>
-
-                <!-- OS Drivers, Boot Sector -->
-                <div class="project-card" data-id="9">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="assets/images/console_driver.png" alt="Console Driver">
-                            <h3>Console Driver and Graphics Driver</h3>
-                        </div>
-                        <div class="project-card-back">
-                            <p class="date">October 2017</p>
-                            <p class="ptype">Course Project (Operating Systems)</p>
-                            Extended the existing console device driver in XV6 OS to support colored text. 
-                                Also created a brand new device driver for graphics display. These projects were implemented using 
-                                C and Assembly Language.    
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Splash Screen Boot Sector -->
-                <div class="project-card" data-id="10">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="assets/images/boot_sector.png" alt="Splash Screen Boot Sector">
-                            <h3>Splash Screen Boot Sector</h3>
-                        </div>
-                        <div class="project-card-back">
-                            <p class="date">September 2017</p>
-                            <p class="ptype">Course Project (Operating Systems)</p>
-                            <p class="description">Created a splash screen boot sector using BIOS services. This involved 
-                                creating a "disk" containing the boot sector and the picture to be shown; waiting for the 
-                                user to press a key, and outputting text on the console; changing the video mode and palette 
-                                settings; reading an image from disk into memory and producing a nice-looking, alternative 
-                                picture to display, in the right format.</p>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Reality Mining -->
                 <div class="project-card">
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/reality_mining.png" alt="Reality Mining Project">
-                            <h3>Reality Mining</h3>
+                            <h4>Reality Mining</h4>
                         </div>
                         <div class="project-card-back">
                             Project link <a href="https://tinyurl.com/y75a6abq" target="_blank">here</a>
@@ -590,7 +613,7 @@
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/check_that.png" alt="Check That - Android App">
-                            <h3>Check That - Android App</h3>
+                            <h4>Check That - Android App</h4>
                         </div>
                         <div class="project-card-back">
                             <h3>Check That</h3>
@@ -610,7 +633,7 @@
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/iea-media-large.png" alt="IEA">
-                            <h3>Integrated Experience Manager</h3>
+                            <h4>Integrated Experience Manager</h4>
                         </div>
                         <div class="project-card-back">
 						    <p class="date">February 2015 - June 2015</p>
@@ -630,7 +653,7 @@
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/capella-collage.jpg" alt="Capella University">
-                            <h3>Capella University Website</h3>
+                            <h4>Capella University Website</h4>
                         </div>
                         <div class="project-card-back">
                             <h3>Capella University</h3>
@@ -646,7 +669,7 @@
                     <div class="project-card-inner">
                         <div class="project-card-front">
                             <img src="assets/images/mohegan_collage.jpg" alt="Mohegan Sun">
-                            <h3>Mohegan Sun - UAT Support</h3>
+                            <h4>Mohegan Sun - UAT Support</h4>
                         </div>
                         <div class="project-card-back">
                             <h3>Mohegan Sun - UAT Support</h3>
