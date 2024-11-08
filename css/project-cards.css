@@ -173,3 +173,7 @@
 .single-project h4 {
     margin-top: 10px;
 }
+
+.no-flip.thin {
+    width: 240px;
+}
