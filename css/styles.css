@@ -429,3 +429,13 @@ footer {
         opacity: 1;
     }
 }
+
+.contact-info a {
+	margin: 18px;
+	color: white;
+}
+
+.copyright {
+    padding-top: 30px;
+    font-size: 12px;
+  }
