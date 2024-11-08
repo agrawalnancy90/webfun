@@ -87,6 +87,11 @@
     max-width: 90%;
 }
 
+.project-card .mobile-two-screen {
+    max-height: 80%;
+    min-width: 70%;
+}
+
 .project-card h4 {
     margin: 10px 0;
 }
