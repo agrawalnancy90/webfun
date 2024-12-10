@@ -439,3 +439,40 @@ footer {
     padding-top: 30px;
     font-size: 12px;
   }
+  
+  #research {
+    padding-top: 0;
+  }
+
+  .research-section-title {
+    margin-top: 0;
+  }
+
+  .research-container {
+    padding: 10px;
+    position: relative;
+    max-width: 850px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  
+  .google-scholar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .google-scholar-link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #43cea2;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .google-scholar-link:hover {
+    color: #43cea2;
+  }
+  

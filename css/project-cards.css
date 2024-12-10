@@ -6,6 +6,7 @@
     grid-gap: 15px 40px;
     grid-auto-flow: dense; /* Fills gaps in a masonry-like way */
     padding: 20px;
+    padding-bottom: 0;
 }
 
 .project-card {
