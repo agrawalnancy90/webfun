@@ -455,7 +455,7 @@ footer {
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
   
   .google-scholar {
@@ -474,5 +474,79 @@ footer {
   
   .google-scholar-link:hover {
     color: #43cea2;
+  }
+  
+  #youtube-channels {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .channel-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 35px;
+  }
+  
+  .bubble {
+    width: 120px;
+    height: 120px;
+    background-color: #e0f7fa;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bubble img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .bubble span {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bubble::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 2px solid #00796b;
+    border-radius: 50%;
+    animation: bubble-pulse 2s infinite;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  @keyframes bubble-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.3);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
   }
   

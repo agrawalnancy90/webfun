@@ -12,3 +12,14 @@ document.querySelectorAll('.fancy-title').forEach(title => {
         }
     });
 });
+
+const bubbles = document.querySelectorAll('.bubble');
+
+bubbles.forEach(bubble => {
+  bubble.addEventListener('mouseenter', () => {
+    bubble.style.transform = 'scale(1.2) rotate(5deg)';
+  });
+  bubble.addEventListener('mouseleave', () => {
+    bubble.style.transform = 'scale(1) rotate(0)';
+  });
+});
