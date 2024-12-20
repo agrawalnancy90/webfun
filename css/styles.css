@@ -574,142 +574,17 @@ footer {
   
   /* Arrow */
   .arrow {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #43cea2;
     margin-left: 15px;
   }
   
-  /* Testimonial Page */
-  .testimonial-page {
-    background: linear-gradient(to bottom, #eaeaea, #f4f4f4), 
-    url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Solid background + texture */
-    background-blend-mode: overlay; /* Ensures the gradient and texture blend seamlessly */
-    min-height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    transition: transform 0.5s ease;
-    z-index: 2;
+  .arrow:hover {
+    transform: translateX(-5px); /* Slight movement on hover */
   }
 
-  .testimonials-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .testimonial {
-    position: relative;
-    max-width: 300px;
-    margin: 20px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    font-family: 'Permanent Marker', cursive; /* Graffiti-like font */
-    font-size: 1.2rem;
-    text-align: center;
-    color: #333;
-    transform: rotate(-2deg);
-    animation: float 5s ease-in-out infinite alternate;
-  }
-
-  /* Slight rotation for randomness */
-.testimonial:nth-child(even) {
-    transform: rotate(3deg);
-  }
-  
-  .testimonial:nth-child(odd) {
-    transform: rotate(-3deg);
-  }
-  
-  /* Author Styling */
-  .testimonial span {
-    display: block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-style: italic;
-    color: #666;
-  }
-  
-  /* Back Arrow */
-  .arrow-left {
-    font-size: 2rem;
-    font-weight: bold;
-    display: inline-block;
-    cursor: pointer;
-    color: #333;
-    margin-top: 20px;
-    transform: rotate(180deg); /* Flip the arrow to the left */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .arrow-left:hover {
-    transform: rotate(180deg) translateX(-5px); /* Slight movement on hover */
-  }
-
-/* Add light pastel colors for the background */
-.testimonial:nth-child(1) {
-    background-color: #ffebcd; /* Blanched Almond */
-  }
-  
-  .testimonial:nth-child(2) {
-    background-color: #ffe4e1; /* Misty Rose */
-  }
-  
-  .testimonial:nth-child(3) {
-    background-color: #fafad2; /* Light Goldenrod Yellow */
-  }
-  
-  .testimonial:nth-child(4) {
-    background-color: #e0ffff; /* Light Cyan */
-  }
-  
-  .testimonial:nth-child(5) {
-    background-color: #f0e68c; /* Khaki */
-  }
-  
-  .testimonial:nth-child(6) {
-    background-color: #e6e6fa; /* Lavender */
-  }
-  
-  .testimonial:nth-child(7) {
-    background-color: #fffacd; /* Lemon Chiffon */
-  }
-  
-  .testimonial:nth-child(8) {
-    background-color: #d8bfd8; /* Thistle */
-  }
-  
-  .testimonial:nth-child(9) {
-    background-color: #f5f5dc; /* Beige */
-  }
-  
-  .testimonial:nth-child(10) {
-    background-color: #ffe4b5; /* Moccasin */
-  }
-
-  /* Add a pinned effect */
-.testimonial::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 15px;
-    height: 15px;
-    background: #d32f2f; /* Red pin */
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    z-index: 2;
+  .testimonials-anchor {
+    text-decoration: none;
+    color:#1a1b1c;
   }
