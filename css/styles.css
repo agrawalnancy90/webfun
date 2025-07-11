@@ -49,8 +49,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
-    height: 430px;
+    height: 230px;
     background: linear-gradient(to bottom, #185a9d, #43cea2);
     padding: 40px;
     position: relative;
@@ -59,7 +58,7 @@ footer {
 .gradient-div::after {
     content: "";
     display: block;
-    width: 50%;
+    width: 70%;
     height: 100%;
     background: whitesmoke;
     position: absolute;
@@ -67,24 +66,39 @@ footer {
     top: 0;
 }
 
-/* Overflow content styles */
-.overflow-content img{
+.overflow-content {
     position: absolute;
+    display: flex;
+    align-items: flex-start;
     top: 10%;
-    left: 25%;
+    left: 20%;
     z-index: 1;
-    width: 400px;
-    border-radius: 15px;
-    border: 5px solid white;
+    gap: 45px;
 }
 
+.dp-container {
+    position: relative;
+    width: 165px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 5px solid white;
+    flex-shrink: 0;
+}
+
+.dp-container img {
+    position: absolute;
+    top: -125px;
+    left: -165px;
+    width: 350px;
+    border-radius: 15px;
+  }
+
 .intro-text {
-    position: absolute; /* Allows this content to overflow */
-    top: 20%;
-    left: 70%; /* Adjust position within the div */
-    z-index: 1; /* Ensure it sits above other content */
+    z-index: 1;
     text-align: center;
-    color: rgb(36, 34, 34); /* Text color */
+    color: rgb(36, 34, 34);
+    margin-top: 10px;
 }
 
 .intro-text h1 {
@@ -94,10 +108,9 @@ footer {
 
 .intro-text p {
     font-size: 1.2rem;
-    margin: 5px 0;
+    margin: 8px 0 16px;
 }
 
-/* Styling the quote */
 .quote {
     font-style: italic;
     text-align: left;
@@ -105,7 +118,8 @@ footer {
     border-left: 4px solid #FFDB58;
     padding-left: 20px;
     color: #555;
-    margin-top: 100px;;
+    margin-top: 50px;
+    max-width: 650px;
 }
 
 .quote blockquote {
