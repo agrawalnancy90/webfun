@@ -73,7 +73,9 @@ body {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    font-family: 'Permanent Marker', cursive; /* Graffiti-like font */
+    /*font-family: 'Permanent Marker', cursive; /* Graffiti-like font */
+    font-family: "Handlee", cursive;
+    font-weight: 600;
     font-size: 1.2rem;
     text-align: center;
     color: #333;

@@ -13,7 +13,7 @@ h1 {
 
 section {
     padding: 20px 50px;
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -73,7 +73,7 @@ footer {
     top: 10%;
     left: 20%;
     z-index: 1;
-    gap: 45px;
+    gap: 75px;
 }
 
 .dp-container {
@@ -111,6 +111,10 @@ footer {
     margin: 8px 0 16px;
 }
 
+.intro-text blockquote p {
+    font-size: 1.1rem;
+}
+
 .quote {
     font-style: italic;
     text-align: left;
@@ -128,6 +132,7 @@ footer {
 
 .quote footer {
     margin-top: 10px;
+    margin-right: 20px;
     font-size: 0.9rem;
     font-weight: bold;
     background-color: #b1040e;
@@ -570,6 +575,7 @@ footer {
     align-items: center;
     position: relative;
     overflow: hidden;
+    margin-top: 30px;
   }
   
   /* Card */
