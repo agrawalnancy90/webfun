@@ -12,7 +12,7 @@ h1 {
 }
 
 section {
-    padding: 15px 50px 5px 50px;
+    padding: 12px 50px 3px 50px;
     max-width: 900px;
     margin: auto;
 }
@@ -34,15 +34,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    section {
-        padding: 20px;
-    }
 }
 
 .gradient-div {
@@ -140,37 +131,13 @@ footer {
     padding: 5px;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .gradient-div {
-        flex-direction: column; /* Stacks items vertically */
-        align-items: center; /* Centers items */
-        height: auto; /* Adjust height for mobile */
-        padding: 20px 0; /* Vertical padding */
-    }
-
-    .overflow-content {
-        width: 80%; /* Adjust width for mobile */
-        margin-right: 0; /* Remove margin */
-        margin-bottom: 20px; /* Add space below the image */
-    }
-
-    .overflow-content img {
-        top: 0; /* Reset overflow on mobile */
-    }
-
-    .intro-text {
-        text-align: center; /* Center text on mobile */
-    }
-}
-
-/* Career timeline styling */
+/* Career timeline */
 .timeline {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 .career-details-timeline {
     display: flex;
@@ -238,7 +205,7 @@ footer {
 }
 
 /* Heading and career details */
-.career-heading {
+.career-card {
     position: relative;
     cursor: pointer;
     overflow: visible;
@@ -246,10 +213,6 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.career-heading:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-detail-heading {
@@ -261,27 +224,15 @@ footer {
 
 /* Initially hide the career details */
 .career-details {
-    position: absolute;
-    background: #f5f5dc;
-    top: 110%;
-    left: 0;
-    width: 100%;
-    border: 2px solid #d2b48c;
+    margin-top: 15px;
     padding: 10px 15px; 
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-50%); /* Center it vertically */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-    z-index: 100;
-    min-width: 500px;
+    display: none;
+    z-index: 1;
 }
 
-/* Show the career details on hover */
-.career-heading:hover .career-details {
-    opacity: 1;
-    visibility: visible;
+/* Show the career details on expansion */
+.career-card.expanded .career-details {
+   display: block;
 }
 
 .org-header {
@@ -324,22 +275,6 @@ footer {
     padding: 2px 18px;
 }
 
-@media (max-width: 768px) {
-    .timeline {
-        padding-left: 20px;
-    }
-
-    .bus-stop {
-        width: 30px;
-        height: 30px;
-    }
-
-    .career-details {
-        width: auto;
-        left: 10px;
-    }
-}
-
 /* Fancy title styling */
 .fancy-title {
     font-size: 1.15rem;
@@ -353,37 +288,11 @@ footer {
     width: 30px;
 }
 
-.fancy-title-in-card {
-    font-size: 1.15rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.fancy-title-in-card img {
-    height: 30px;
-    width: 30px;
-}
-
-/* Click or hover effect for the career details */
+/* Click effect for the career details */
 .career-heading {
     position: relative;
 }
 
-.career-details {
-    /* Transition for smooth appearance */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    padding: 15px;
-    z-index: 10;
-}
 .expand-icon {
     display: inline-block;
     margin-left: auto;
@@ -396,29 +305,9 @@ footer {
     width: 100%;
 }
 
-.career-heading:hover .career-details,
-.career-heading:focus-within .career-details {
-    opacity: 1;
-    visibility: visible;
-}
-
 /* Rotate icon when details are visible */
-.career-heading:hover .expand-icon,
-.career-heading:focus-within .expand-icon {
+.expand-icon.expanded {
     transform: rotate(180deg);
-}
-
-
-/* Styling for mobile */
-@media (max-width: 768px) {
-    .career-details {
-        position: relative;
-        top: 10px;
-        left: 0;
-    }
-    .fancy-title:hover {
-        transform: none;
-    }
 }
 
 /* Pulse dot */
@@ -592,7 +481,7 @@ footer {
     align-items: center;
   }
   
-  /* Arrow */
+  /* Arrow on the 'Quiet Rewards' */
   .arrow {
     font-size: 22px;
     font-weight: bold;
