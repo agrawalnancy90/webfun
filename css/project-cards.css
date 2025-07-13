@@ -158,6 +158,19 @@
     text-align: center;
 }
 
+.no-flip--wide.outlook {
+    height: 300px;  
+    margin-top: 25px;
+}
+
+.no-flip.nested {
+    width: auto;
+    height: auto;
+    border: none;
+    margin-top: -35px;
+    min-height: 185px;
+}
+
 .no-flip h3 {
     margin-top: 0;
 }

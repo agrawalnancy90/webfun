@@ -36,6 +36,19 @@ footer {
     padding: 20px;
 }
 
+.image-and-desc-flexbox {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    padding: 15px;
+}
+
+.outlook-img {
+    width: 20%;
+    height: 50%;
+    margin-left: -20px;
+}
+
 .gradient-div {
     display: flex;
     justify-content: flex-start;
