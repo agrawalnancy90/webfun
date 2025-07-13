@@ -1,0 +1,26 @@
+<svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .draw {
+      fill: none;
+      stroke: #43cea2;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: draw-line 2s ease-out forwards;
+    }
+
+    @keyframes draw-line {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!-- Straight shaft -->
+  <path class="draw" d="M10 10 L110 10" />
+
+  <!-- Arrowhead -->
+  <path class="draw" d="M105 5 L125 10 L105 15" />
+</svg>
