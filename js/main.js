@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
       cards.forEach((c) => {
         if (c !== card) {
           c.classList.remove("expanded");
-          const otherArrow = c.querySelector(".arrow");
+          const otherHeader = c.querySelector(".career-heading");
+          const otherArrow = otherHeader.querySelector(".expand-icon");
           if (otherArrow) otherArrow.classList.remove("expanded");
         }
       });
