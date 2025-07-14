@@ -570,5 +570,10 @@ footer {
         width: 30px;
         height: 70px;
     }
+
+    .timeline {
+        margin-left: -20px;
+    }
   }
+
   
