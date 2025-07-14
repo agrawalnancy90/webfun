@@ -560,9 +560,14 @@ footer {
         padding-left: 0;
     }
 
+    .timeline-detail,
+    .timeline-detail-heading {
+        font-size: 0.9rem;
+    }
+
     .footstep {
         margin-left: 10px;
-        width: 50px;
+        width: 30px;
         height: 70px;
     }
   }
