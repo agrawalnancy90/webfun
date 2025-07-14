@@ -144,6 +144,49 @@ footer {
     padding: 5px;
 }
 
+/* Responsive header */
+@media (max-width: 768px) {
+    .gradient-div {
+      height: auto;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .overflow-content {
+      position: static;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      padding: 0 10px;
+    }
+  
+    .dp-container {
+      width: 120px;
+      height: 160px;
+      border-width: 3px;
+    }
+  
+    .dp-container img {
+      top: -100px;
+      left: -120px;
+      width: 260px;
+    }
+  
+    .intro-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .intro-text p {
+      font-size: 1rem;
+    }
+  
+    .quote { 
+        display: none;
+    }
+  }
+  
+
 /* Career timeline */
 .timeline {
     display: flex;
