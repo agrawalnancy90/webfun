@@ -308,5 +308,22 @@
         bottom: 10px;
         right: 10px;
       }
+
+      .research-section-title {
+        margin-top: 20px;
+      }
+
+      .research-container {
+        margin-bottom: 0;
+      }
+
+      #youtube-channels {
+        padding: 12px 50px 3px 50px;
+        margin-top: 20px;
+      }
+
+      .channel-bubbles {
+        margin-top: 25px;
+      }
   }
   
