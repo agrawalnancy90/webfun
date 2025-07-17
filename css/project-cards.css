@@ -216,6 +216,7 @@
       min-height: 250px;
       border-radius: 10px;
       margin: 0 auto;
+      padding: 15px 0;
     }
   
     .project-card-inner {
